@@ -38,7 +38,7 @@ html,body{height: 100%;}
 .about ul>li>ul>li.tit{font-size: 25px; color:#0045b6; text-transform: uppercase; letter-spacing: 2px;display: block; width: 100%; text-align-last: left; padding-top: 0; }
 .about ul>li>ul>li i{display: block; font-size: 40px; padding-bottom:30px; transition: all 0.5s;}
 .about ul>li>ul>li i:hover{color:#1363ce;}
-.about em{width: 850px; height: 650px; background:#aaa; position: absolute; right: 0; top: 140px;}
+.about em{width: 850px; height: 650px; background:url(../img/profile.jpg) center; background-size:cover; position: absolute; right: 0; top: 140px;}
 
 
 /*skill*/
