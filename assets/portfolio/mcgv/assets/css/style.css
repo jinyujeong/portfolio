@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*layout*/
+#wrap{background:#f2f2f2; overflow: hidden;}
+#header{background:#fff; margin-bottom: 9px;}
+#reservation{background:#fff; padding: 12px;}
+#unit{background:#fff;margin-top: 9px;}
+#ad{background:#fff;margin-top: 9px;}
+#like{background:#fff;margin-top: 9px; padding: 16px 0 12px 12px; overflow: hidden;}
+#concept{background:#fff;margin-top: 9px;}
+
+/*header*/
+/*lnb*/
+#header h1{padding: 8px 0 7px 16px; width: 63px; height: 27px;}
+.lnb{position: absolute; right: 16px; top: 8px; overflow: hidden;}
+.lnb .count{float: left; padding-right: 23px;padding-top: 4px;}
+.lnb .count a{font-size: 13px; width: 20px;height: 19px; text-align: center; line-height: 21px; display: block; border:1px solid #030303; border-radius: 50%; font-weight: 600;}
+.lnb .alarm{float: left; padding-right: 23px;}
+.lnb .alarm a{font-size: 18px;}
+.lnb .s_menu{float: left; padding-top: 6px;}
+.lnb .s_menu p{width: 22px;height: 2px; background:#030303; box-shadow: 0 6px 0 0 #030303, 0 12px 0 0 #030303;}
+
+/*gnb*/
+.gnb{overflow: hidden;}
+.gnb ul{width: 110%;}
+.gnb li{float: left; width: 20%; text-align: center; padding: 15px 0;}
+.gnb li.active{border-bottom:2px solid #030303;}
+.gnb li a{font-size: 14px;}
+
+/*banner*/
+.banner{}
+.banner_vid{position: relative;}
+.banner_vid img{}
+.banner_vid p.time{position: absolute; bottom: 20px; left: 6px; width: 30px; height: 15px; background:#000; color:#fff; font-size: 10px; text-align: center; border-radius: 3px; line-height: 15px; font-size: 11px;}
+.banner_vid p.more{position: absolute; right: 6px; bottom: 20px;width: 65px; height: 22px;}
+.banner_vid p.more a{ color:#fff; line-height: 22px; background:rgba(0,0,0,0.5); padding-left: 6px; border-radius: 45px; font-size: 11px;}
+.banner_vid span{display: inline-block; width: 22px; height: 22px; background:#000; position: absolute; right: 0; top: 0; border-radius: 50%; color:#fff; font-size: 10px; text-align: center; line-height: 22px;}
+
+.banner_text{padding: 12px; position: relative;}
+.banner_text img{width: 40px;}
+.banner_text p{display: inline-block; font-size: 14px; padding-left: 10px; width: 220px; overflow:  hidden;text-overflow: ellipsis; white-space: nowrap;}
+.banner_text span{display: block; font-size: 11px; color:#9aa0ab;}
+.banner_text a{width: 66px; text-align: center; border:1px solid #9599a0; border-radius: 3px; display: inline-block; position: absolute; right: 12px; bottom: 18px; line-height: 26px; color:#9599a0;}
+
+/*reservation*/
+.res_top{padding-top: 4px; padding-bottom: 11px; position: relative; border-bottom: 1px solid #d8d8d8;}
+.res_top ul{}
+.res_top li{display: inline-block; position: relative; padding-right: 5px;}
+.res_top li:first-child:before{content:""; width: 2px; height: 2px; border-radius: 50%; background:#9197a3; position: absolute; right: 0;top: 10px;}
+.res_top li a{font-size: 14px; color:#9197a3;}
+.res_top li.active a{color:#000;}
+.res_top li.soon a{width: 62px; text-align: center; display: inline-block; line-height: 24px; border:1px solid #9197a3; font-size: 11px; margin-left: 5px; border-radius: 3px;}
+.res_top>a{font-size: 12px; color:#9197a3; position: absolute; right: 14px; top: 8px;}
+.res_top>a i{padding-left: 5px;}
+
+.res_center{padding: 12px 0 12px 0;}
+.res_center ul{}
+.res_center li{display: inline; padding-right: 12px;}
+.res_center li a{color:#9197a3;}
+.res_center li.active a{color:#4e88cf; font-size: 14px;}
+
+.res_bottom{overflow: hidden; width: 800px; padding-bottom: 10px;}
+.res_bottom >div {float: left; padding-right: 5px;}
+.res_bottom .poster{width: 148px; position: relative;}
+.res_bottom .ad{width: 293px; height: 211px; background:url(../img/rocketman_ad.jpg) no-repeat center top; background-size:contain;}
+.res_bottom .poster a{}
+.res_bottom .poster img{position: relative;}
+.res_bottom .poster img:after{content:""; width: 100%; height: 100%; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.4));; position: absolute; left: 0; top: 0;}
+.res_bottom .poster p.ranking{font-size: 28px; color:#fff; font-style: italic; position: absolute; left: 10px; top: 150px; z-index: 2;}
+.res_bottom .poster h3{font-size: 12px; padding-top: 9px; text-align: center;}
+.res_bottom .poster ul{padding-left:30px; position: relative; margin-bottom: 10px;}
+.res_bottom .poster li{display: inline-block;  font-size: 11px; line-height: 17px; position: relative;padding-right: 5px;}
+.res_bottom .poster li:nth-child(2):before{content:"";width: 1px; height: 1px; border-radius: 50%; background:#000; position: absolute; right: 0;top: 8px;}
+.res_bottom .poster li.egg{background:url(../img/sprite.png) no-repeat -29px -129px;width: 10px; height: 17px; position: absolute; left: 14px; top: 4px;}
+.res_bottom .poster a.now{width: 106px; display:block; border:1px solid #9599a0; line-height: 26px; color:#9599a0; text-align: center; font-size: 11px; border-radius: 45px; margin: 0 auto;}
+
+/*unit*/
+.unit{}
+.unit ul{overflow: hidden;}
+.unit li{float: left; width: 33.333%; padding: 20px 0;}
+.unit li a{display: block; text-align: center;}
+.unit li img{width: 28px;display: block; margin: 0 auto; padding-bottom: 8px;}
+.unit li span{font-size: 12px;}
+
+/*like*/
+#like h2{padding-bottom: 17px; font-size: 14px; font-weight: bold;}
+.like{overflow: hidden; width: 500px;}
+.like>div.like_box{float: left;width: 238px; margin-right: 8px;border:1px solid #dddfe2; }
+.like_box img{}
+.like_box p{padding: 9px 0 11px 15px;}
+.like_box p>a{font-size: 13px; font-weight: bold;}
+.like_box span{display: block; font-size: 11px; color:#9197a3;}
+.like_box>a{display: block; width: 100%; text-align: center; color:#9197a3; border-top:1px solid #dddfe2; padding: 14px 0;}
+
+/*concept*/
+.concept{}
+.concept ul{overflow: hidden;}
+.concept li{width: 33.333%; float: left; box-sizing: border-box; border-top:1px solid #dddfe2;}
+.concept li:nth-child(1){border-top:none;border-right:1px solid #dddfe2;}
+.concept li:nth-child(2){border-top:none;border-right:1px solid #dddfe2;}
+.concept li:nth-child(3){border-top:none;}
+.concept li:nth-child(4){border-right:1px solid #dddfe2;}
+.concept li:nth-child(5){border-right:1px solid #dddfe2;}
+.concept li:nth-child(7){border-right:1px solid #dddfe2;}
+.concept li:nth-child(8){border-right:1px solid #dddfe2;}
+.concept li:nth-child(10){border-right:1px solid #dddfe2;}
+.concept li:nth-child(11){border-right:1px solid #dddfe2;}
+.concept li a{width: 107px; display: block; margin: 0 auto;}
