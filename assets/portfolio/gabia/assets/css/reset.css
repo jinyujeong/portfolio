@@ -1,0 +1,26 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+/*reset*/
+
+/*여백초기화*/
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,select,button,figure{margin: 0;padding: 0;}
+
+/*list-style*/
+ul,li,ol{list-style: none; }
+
+/* a링크 초기화*/
+a{color:#333; text-decoration: none;}
+
+/*img*/
+img{border:0;}
+
+/*font-style*/
+body,input,textarea,select,button,table{font-family: 'NanumSquare','맑은 고딕','Apple SD Gothic Neo','돋움',dotum,sans-serif; font-size: 12px; line-height: 1.5;}
+em,address{font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-size: 15px; font-weight: normal;}
+
+/*table*/
+table{width: 100%; border-spacing: 0; border-collapse: collapse;}
+
+/*ir*/
+.ir{width: 0;height: 0;font-size: 0;line-height: 0;position: absolute;left: 0;top: 0;overflow: hidden;}
