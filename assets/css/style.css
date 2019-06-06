@@ -5,6 +5,7 @@
 #main{ height: 937px;overflow: hidden;}
 #about{background:#2041f8; height: 937px;position: relative;}
 #portfolio{}
+#footer{border-top:1px solid #dddfe2; background:#fff;}
 
 .container{width: 1280px; margin: 0 auto;}
 
