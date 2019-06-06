@@ -1,1 +1,13 @@
 @charset "utf-8";
+
+/*layout*/
+#wrap{width: 100%;}
+#main{ height: 937px;overflow: hidden;}
+
+/*main*/
+.m_left{width: 50%;height: inherit; float: left; background:#2041f8; position: relative;}
+.m_left .ml_box{width: 480px; height: 475px; background:#fff; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.m_left .ml_box h1{font-size: 30px; color:#0000ff; font-weight: bold; padding:160px 0 39px 58px; text-transform: uppercase; letter-spacing: 1px;}
+.m_left .ml_box p{color:#666; padding-left: 58px;}
+.m_right{width: 50%;height: inherit; float: left; background:url(../img/coding.gif) no-repeat center; background-size:cover; position: relative;}
+.m_right .mr_box{width: 480px; height: 475px; background:#000 url(../img/vscode.gif); background-size:cover; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
