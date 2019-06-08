@@ -1,13 +1,45 @@
 @charset "utf-8";
 
 /*layout*/
-#wrap{width: 100%;}
+#wrap{width: 100%;;}
+#nav{position: fixed; left: 0; top: 0; width: 60px; height: 100%; background:#343434; z-index: 10;}
 #main{ height: 937px;overflow: hidden;}
 #about{background:#2041f8; height: 937px;position: relative;}
 #portfolio{}
 #footer{border-top:1px solid #dddfe2; background:#fff;}
 
 .container{width: 1280px; margin: 0 auto;}
+
+/*nav*/
+.nav{}
+.nav ul{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.nav li{padding-bottom: 20px;}
+.nav a{text-transform: uppercase; color:#aaa; font-size: 20px;padding-left: 20px; position: relative;}
+.nav a span{display: none; position: absolute; transform: rotate(0deg); top: 0;;}
+.nav a span:nth-child(1){left:40px; animation: navani 0.2s; }
+.nav a span:nth-child(2){left:60px; animation: navani 0.3s}
+.nav a span:nth-child(3){left:80px; animation: navani 0.4s}
+.nav a span:nth-child(4){left:100px; animation: navani 0.5s}
+.nav a span:nth-child(5){left:120px; animation: navani 0.6s}
+.nav a span:nth-child(6){left:140px; animation: navani 0.7s}
+.nav a span:nth-child(7){left:160px; animation: navani 0.8s}
+.nav a span:nth-child(8){left:175px; animation: navani 0.9s}
+.nav a:hover span:nth-child(1){display: block;}
+.nav a:hover span:nth-child(2){display: block;}
+.nav a:hover span:nth-child(3){display: block;}
+.nav a:hover span:nth-child(4){display: block;}
+.nav a:hover span:nth-child(5){display: block;}
+.nav a:hover span:nth-child(6){display: block;}
+.nav a:hover span:nth-child(7){display: block;}
+.nav a:hover span:nth-child(8){display: block;}
+.nav a:hover span:nth-child(9){display: block;}
+
+@keyframes navani{
+    0%{left: 20px; top: 20px; transform: rotate(90deg); opacity: 0;}
+    20%{opacity: 0;}
+    50%{display: none; left: 30px; top: 10px; rotate: (45deg);}
+    100%{display: block; top: 0; transform: rotate(0deg);}
+}
 
 /*main*/
 .m_left{width: 50%;height: inherit; float: left; background:#2041f8; position: relative;}
