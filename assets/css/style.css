@@ -15,7 +15,7 @@
 .nav h1 a{width: 35px; display: block; padding-top: 30px; padding-left: 10px;}
 .nav ul{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .nav li{padding-bottom: 20px;}
-.nav li a{text-transform: uppercase; color:#aaa; font-size: 20px;padding-left: 20px; position: relative; transition: all 0.2s;}
+.nav li a{text-transform: uppercase; color:#bbb; font-size: 20px;padding-left: 20px; position: relative; transition: all 0.2s;}
 .nav li a span{display: none; position: absolute; transform: rotate(0deg); top: 0;}
 .nav li a span:nth-child(1){left:40px; animation: navani 0.2s;}
 .nav li a span:nth-child(2){left:60px; animation: navani 0.3s}
@@ -25,7 +25,7 @@
 .nav li a span:nth-child(6){left:140px; animation: navani 0.7s}
 .nav li a span:nth-child(7){left:160px; animation: navani 0.8s}
 .nav li a span:nth-child(8){left:175px; animation: navani 0.9s}
-.nav li a:hover{color:#fff;}
+.nav li a:hover{color:#999;}
 .nav li a:hover span:nth-child(1){display: block;}
 .nav li a:hover span:nth-child(2){display: block;}
 .nav li a:hover span:nth-child(3){display: block;}
