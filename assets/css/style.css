@@ -2,7 +2,7 @@
 
 /*layout*/
 #wrap{width: 100%;;}
-#nav{position: fixed; left: 0; top: 0; width: 60px; height: 100%; background:#343434; z-index: 9999;}
+#nav{position: fixed; left: 0; top: 0; width: 60px; height: 100%; background:rgba(0,0,0,0.1); z-index: 9999;}
 #main{ height: 937px;overflow: hidden;}
 #about{background:#2041f8; height: 937px;position: relative;}
 #portfolio{}
@@ -16,8 +16,8 @@
 .nav ul{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .nav li{padding-bottom: 20px;}
 .nav li a{text-transform: uppercase; color:#aaa; font-size: 20px;padding-left: 20px; position: relative; transition: all 0.2s;}
-.nav li a span{display: none; position: absolute; transform: rotate(0deg); top: 0;;}
-.nav li a span:nth-child(1){left:40px; animation: navani 0.2s; }
+.nav li a span{display: none; position: absolute; transform: rotate(0deg); top: 0;}
+.nav li a span:nth-child(1){left:40px; animation: navani 0.2s;}
 .nav li a span:nth-child(2){left:60px; animation: navani 0.3s}
 .nav li a span:nth-child(3){left:80px; animation: navani 0.4s}
 .nav li a span:nth-child(4){left:100px; animation: navani 0.5s}
