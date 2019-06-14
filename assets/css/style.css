@@ -8,7 +8,7 @@
 #navi{position: fixed; width: 100%; z-index: 10;}
 #contents{}
 #cont1{background:url(../img/m2.jpg) no-repeat left top; background-size:cover;}
-#cont2{height: 100vh; background:url(../img/a.png) no-repeat center; background-size:cover;}
+#cont2{height: 100vh; background:#fff url(../img/a.png) no-repeat center; background-size:cover;}
 #cont3{}
 
 /*container*/
