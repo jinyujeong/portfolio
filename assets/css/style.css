@@ -186,9 +186,8 @@
   #navi a.ham{top:40px;}
   #navi a.ham span{}
 
-  .line{bottom: 15%;}
+  .line{bottom: 10%;}
   .line span{padding-right: 100px;}
-  #cont3 .line{bottom: 150px;}
 
   .cont1 .text h2 {font-size: 40px; font-weight: bold;}
   .cont1 .text p{font-size: 14px;}
