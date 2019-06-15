@@ -132,7 +132,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 25px;
 
     display: block;
 
@@ -143,6 +143,8 @@
     list-style: none;
 
     text-align: center;
+
+    z-index: 200;
 }
 .slick-dots li
 {
@@ -195,14 +197,16 @@
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 
-    content: '•';
+    content: '';
+    display: block;
     text-align: center;
 
     opacity: .25;
-    color: black;
+    background-color: black;
+    border-radius: 50%;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
