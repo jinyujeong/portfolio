@@ -4,6 +4,6 @@ $(document).ready(function() {
         speed:2000,
     });
     $('.slider').slick({
-        
+        dots:true,
       });
 });
