@@ -107,7 +107,7 @@
 #cont3 .slider{width: 100%; height: 100%;}
 .port{position: relative; width: 100%; height: 100%;}
 .port_box{height: 100vh;position: relative}
-.port_box .text{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 40%;}
+.port_box .text{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 60%;}
 .port_box .text h2{font-size: 14px; color:#a4a4a4; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; padding-bottom: 3%;}
 .port_box .text h3{font-size: 30px; text-transform: uppercase; padding-bottom: 3%;}
 .port_box .text p{color:#a4a4a4; padding-bottom: 1.2%;}
