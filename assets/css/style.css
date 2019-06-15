@@ -188,6 +188,7 @@
 
   .line{bottom: 10%;}
   .line span{padding-right: 100px;}
+  #cont3 .line{bottom: 15%;}
 
   .cont1 .text h2 {font-size: 40px; font-weight: bold;}
   .cont1 .text p{font-size: 14px;}
