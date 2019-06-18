@@ -7,19 +7,19 @@
 #wrap{height: 100vh; }
 #navi{position: fixed; width: 100%; z-index: 10;}
 #contents{}
-#cont1{background:url(../img/m2.jpg) no-repeat left top; background-size:cover;}
-#cont2{height: 100vh; background:#fff url(../img/a.png) no-repeat center; background-size:cover;}
-#cont3{width: 100%; height: 100vh; }
-#footer{width: 100%; height: 100vh; background:#aaa;}
+#cont1{height: 100vh; background:url(../img/m.jpg) no-repeat left top; background-size:cover; position: relative;}
+#cont2{height: 100vh; background:#fff url(../img/bg2.jpg) no-repeat center; background-size:cover;}
+#cont3{width: 100%;}
+#footer{width: 100%; background:#efefef;}
 
 /*container*/
 .container{position: relative; width: 1380px; margin: 0 auto; }
 .row{padding: 0 24px;}
 
 /*navi*/
-#navi h1{color:#fff; font-size: 42px; position: absolute; top: 40px; left: 50px; font-weight: bold; transition: all 0.3s;}
+#navi h1{position: absolute; top: 40px; left: 50px; width: 100px; height: 62px; background:url(../img/logo.png) no-repeat left top; background-size:contain;}
 #navi a.ham{position: absolute; top: 65px; right: 50px;}
-#navi a.ham span{width: 25px; height: 4px; background:#fff; display: block; transition: all 0.3s;}
+#navi a.ham span{width: 25px; height: 4px; background:#fff; display: block;}
 #navi a.ham span:after{content:""; width: 25px; height: 4px; background:#fff; display: block; position: absolute; left: 0; top: 12px; transition: all 0.3s;}
 
 
@@ -28,8 +28,10 @@
 .line span{display: inline-block; padding-bottom: 1%; font-size: 30px; color:#fff; border-bottom:3px solid #fff; margin-bottom: -2px;}
 
 /*cont1*/
+.gradient{width: 100%; height: 100vh; background: url(../img/maineffect.png) no-repeat left top; background-size: cover; opacity: 0; transition: all 1s; position: absolute; left: 0;top: 0;}
+.gradient.show{opacity: 1;}
 .cont1{position: relative; width: 100%; height: 100vh;}
-.cont1 .text{position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0 20px;}
+.cont1 .text{position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0 20px; z-index: 3;}
 .cont1 .text h2{color:#fff; font-size: 66px; padding-bottom:5%;}
 .cont1 .text p{ font-size: 16px;color:#999; width: 50%; margin-bottom: 8%;}
 .cont1 .text p em{text-transform: uppercase;}
@@ -109,19 +111,20 @@
 .port_box{height: 100vh;position: relative}
 .port_box .text{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 60%;}
 .port_box .text h2{font-size: 14px; color:#a4a4a4; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; padding-bottom: 3%;}
-.port_box .text h3{font-size: 30px; text-transform: uppercase; padding-bottom: 3%;}
-.port_box .text p{color:#a4a4a4; padding-bottom: 1.2%;}
-.port_box .text a.view{display: inline-block; width: 200px; background-color:#2551a2; text-transform: uppercase; color:#fff; position: relative; line-height: 50px; padding-left: 33px; margin-top: 5%;
+.port_box .text h3{font-size: 30px; text-transform: uppercase; padding-bottom: 3%; opacity: 0; transition:all 0.6s ease-in-out;}
+.port_box .text p{color:#a4a4a4; padding-bottom: 1.2%; opacity: 0;transition:all 1s ease-in-out;}
+.port_box .text a.view{display: inline-block; width: 200px; background-color:#2551a2; text-transform: uppercase; color:#fff; position: relative; line-height: 50px; padding-left: 33px; margin-top: 5%;  
   background-image: linear-gradient(to left, transparent, transparent 50%, #2c63c5 50%, #2c63c5);
   background-position: 100% 0;
   background-size: 200% 100%;
-  transition: all 0.25s ease-in;
+  transition: all 0.5s ease-in;
+  opacity: 0;
 }
 .port_box .text a.view:after{content:""; width: 50px; height: 15px; background:url(../img/arrow-white.svg) no-repeat center; position: absolute; right:33px; top: 50%; transform: translateY(-50%); background-size: contain;}
 .port_box .text a.view:hover {
   background-position: 0 0;
 }
-.port .mock{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 60%; height: 450px; background:#aaa;}
+.port .mock{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 60%; height: 450px; background:#aaa;  opacity: 0;transition:all 1.5s ease-in-out;}
 .port1 .mock{background:url(../img/m-standard.png) no-repeat center; background-size:contain;}
 .port2 .mock{background:url(../img/m-responsive.png) no-repeat center; background-size:contain;}
 .port3 .mock{background:url(../img/m-gabia.png) no-repeat center; background-size:contain;}
@@ -129,10 +132,31 @@
 .port5 .mock{background:url(../img/m-megabox.png) no-repeat center; background-size:contain;}
 #cont3 .line span{color:#1830ec; border-color:#1830ec; width: 60%;}
 
+/*parallax*/
+.show{}
+.port.show .text h3{opacity: 1; animation:fadeIn;}
+.port.show .text p{opacity: 1; animation:fadeIn;}
+.port.show .text a{opacity: 1; animation:bounceInLeft;}
+.port.show .mock{opacity: 1; animation:bounceInRight;}
 
 
+/*footer*/
+.footer{position: relative;}
+.footer h2{background:#2751a5; width: 145px; height: 145px; border-radius: 5px; position: absolute; left: 0; top: -50px; opacity: 0; transition: all 1.5s ease-in-out;}
+.footer h2 span{display: block; width: 90px; height: 38px; background:url(../img/footer_logo.png) no-repeat left top; background-size:contain; position: absolute; left: 50%; top: 50%; margin-top: -19px; margin-left: -45px;}
+.footer .text{padding-top: 160px; float: left; width: 40%;}
+.footer .text p{text-transform: uppercase; color:#4a4a4a;}
+.footer .contact{padding: 80px 0 60px 100px; float: left; width: 60%; box-sizing: border-box;}
+.footer .contact p{display: inline-block; width: 49%;}
+.footer .contact p:nth-child(1){padding-bottom: 50px;}
+.footer .contact p:nth-child(2){padding-bottom: 50px;}
+.footer .contact em{font-size: 20px; font-weight: bold; letter-spacing: 1px;}
+.footer .contact span{display: block; padding-top: 20px; color:#4a4a4a;}
+.footer .contact a.sns{position: relative; display: block; width: 15px; height: 15px;}
+.footer .contact a.sns:before{content:""; position: absolute; left: 71px; top: 23px; width: 15px; height: 15px; padding-left: 5px; background:url(../img/insta.png)no-repeat center; background-size:contain;}
 
-
+/*parallax*/
+.footer h2.show{opacity: 1; animation:bounceInUp;}
 
 /* mediaquery */
 
