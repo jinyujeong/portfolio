@@ -4,7 +4,11 @@ $(document).ready(function() {
         speed:2000,
     });
 */
-    var main = $('#cont1 .gradient');
+    //main-animation
+    var main = $('#cont1');
+    main.find('.gradient').addClass('show');
+
+    //animation
     var count = $('#cont2');
     var cont = $("#cont3 > div.port");
     var foot = $('.footer h2');
@@ -12,11 +16,6 @@ $(document).ready(function() {
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
         
-        //main-animation
-        if(wScroll>=main.offset().top-$(window).height()){
-            main.addClass('show');
-        }
-
         //timer-animation
         if(wScroll>=count.offset().top-$(window).height()/3){
             $('.timer').each(function() {
@@ -27,7 +26,7 @@ $(document).ready(function() {
                   countNum: countTo
                 },
                 {
-                  duration: 1000,
+                  duration: 1500,
                   easing:'linear',
                   step: function() {
                     $this.text(Math.floor(this.countNum));
