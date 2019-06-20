@@ -59,6 +59,9 @@ $(document).ready(function() {
         if(wScroll>=cont.eq(4).offset().top-$(window).height()/3){
             cont.eq(4).addClass('show');
         }
+        if(wScroll>=cont.eq(5).offset().top-$(window).height()/3){
+            cont.eq(5).addClass('show');
+        }
         
         if(wScroll>=foot.offset().top-$(window).height()){
             foot.addClass('show');
