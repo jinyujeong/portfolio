@@ -10,7 +10,7 @@
 #cont1{height: 100vh; background:url(../img/m.jpg) no-repeat left top; background-size:cover; position: relative;}
 #cont2{height: 100vh; background:#fff url(../img/bg2.jpg) no-repeat center; background-size:cover; background-attachment: fixed;}
 #cont3{width: 100%;}
-#footer{width: 100%; background:#e4e4e4;}
+#footer{width: 100%; background:#fff; background-attachment: fixed; border-top:1px solid #f4f2fd;}
 
 /*container*/
 .container{position: relative; width: 1380px; margin: 0 auto; }
@@ -143,17 +143,17 @@
 /*footer*/
 .footer{position: relative;}
 .footer h2{background:#2751a5; width: 145px; height: 145px; border-radius: 5px; position: absolute; left: 0; top: -50px; opacity: 0; transition: all 1.5s ease-in-out; transform: translateY(50%);}
-.footer h2 span{display: block; width: 90px; height: 38px; background:url(../img/footer_logo.png) no-repeat left top; background-size:contain; position: absolute; left: 50%; top: 50%; margin-top: -19px; margin-left: -45px;}
+.footer h2 span{display: block; width: 90px; height: 38px; background:url(../img/footer_logo.png) no-repeat left top; background-size:contain; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
 .footer .text{padding-top: 160px; float: left; width: 40%;}
 .footer .text p{text-transform: uppercase; color:#4a4a4a;}
 .footer .contact{padding: 80px 0 60px 100px; float: left; width: 60%; box-sizing: border-box;}
 .footer .contact p{display: inline-block; width: 49%;}
 .footer .contact p:nth-child(1){padding-bottom: 50px;}
 .footer .contact p:nth-child(2){padding-bottom: 50px;}
-.footer .contact em{font-size: 20px; font-weight: bold; letter-spacing: 1px;}
-.footer .contact span{display: block; padding-top: 20px; color:#4a4a4a;}
-.footer .contact a.sns{position: relative; display: block; width: 15px; height: 15px;}
-.footer .contact a.sns:before{content:""; position: absolute; left: 71px; top: 23px; width: 15px; height: 15px; padding-left: 5px; background:url(../img/insta.png)no-repeat center; background-size:contain;}
+.footer .contact em{font-size: 20px; font-weight: bold; letter-spacing: 1px; display: block;s}
+.footer .contact span{display: block; padding-top: 20px; color:#4a4a4a; width: auto;}
+.footer .contact a.sns{position: relative; display: inline-block; width: auto; height: 15px;}
+.footer .contact a.sns:after{content:""; position: absolute; left: 71px; top: 23px; width: 15px; height: 15px; padding-left: 5px; background:url(../img/insta.png)no-repeat center; background-size:contain;}
 
 /*parallax*/
 .footer h2.show{opacity: 1; transform: none;}
@@ -190,9 +190,10 @@
   .cont2 .text h2{font-size: 50px;}
   .cont2 .text p{font-size: 18px;}
 
-  .port .mock{width: 80%; height: 300px; top: 15%; left:50%; transform: translateX(-50%);}
+  .port .mock{width: 80%; height: 300px; top: 15%; left:50%; transform: translateX(-30%);}
   .port_box .text{left: 50%; transform: translateX(-50%); top: 50%; text-align: center;}
   .port_box .text a.view{text-align: left;}
+  .port.show .mock{transform: translate(-50%,0); }
 }
 
 @media (max-width: 768px){
@@ -203,6 +204,16 @@
   .port_box .text h3{font-size: 25px;}
   .port_box .text a.view{width: 150px; line-height: 40px; padding-left: 20px;}
   .port_box .text a.view:after{width: 35px; right: 20px;}
+
+  .footer h2{width: 100px; height: 100px;}
+  .footer h2 span{width: 60px; height: 32px;}
+  .footer .text{width: 100%; padding-top: 80px;}
+  .footer .contact{padding: 20px 0 0 0; width: 100%;}
+  .footer .contact p{text-align: center;}
+  .footer .contact em{font-size: 16px;}
+  .footer .contact span{padding-top: 10px;}
+  .footer .contact a.sns{margin: 0 auto;}
+  .footer .contact a.sns:after{top: 13px;}
 }
 
 @media (max-width: 600px){
@@ -221,6 +232,7 @@
   .cont2 .text h2{font-size: 30px;}
   .cont2 .text p{font-size: 12px;}
   .cont2 .skill span{font-size: 20px;}
+  .cont2 .skill p {width: 48%;}
 
   .port .mock{height: 210px;}
   .port_box .text h3{font-size: 20px;}
