@@ -2,6 +2,7 @@
 
 /*font*/
 /* font-family: 'Encode Sans Expanded', sans-serif; */
+  
 
 /*layout*/
 #wrap{height: 100vh; }
@@ -10,21 +11,19 @@
 #cont1{height: 100vh; background:url(../img/m.jpg) no-repeat left top; background-size:cover; position: relative;}
 #cont2{height: 100vh; background:#fff url(../img/bg2.jpg) no-repeat center; background-size:cover; background-attachment: fixed;}
 #cont3{width: 100%;}
-#footer{width: 100%; background:#fff; background-attachment: fixed; border-top:1px solid #f4f2fd;}
+#footer{width: 100%; background-repeat: repeat; background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, #eee, #eee 20%, #fff 20%, #fff 90%, #eee 90%);
+    background-size: 10px 10px; background-attachment: fixed; border-top:1px solid #eee;}
 
 /*container*/
 .container{position: relative; width: 1380px; margin: 0 auto; }
 .row{padding: 0 24px;}
 
 /*navi*/
-#navi h1{position: absolute; top: 40px; left: 50px; width: 100px; height: 62px; background:url(../img/logo.png) no-repeat left top; background-size:contain;}
-#navi a.ham{position: absolute; top: 65px; right: 50px;}
-#navi a.ham span{width: 25px; height: 4px; background:#fff; display: block;}
-#navi a.ham span:after{content:""; width: 25px; height: 4px; background:#fff; display: block; position: absolute; left: 0; top: 12px; transition: all 0.3s;}
-
+#navi h1{position: absolute; top: 40px; left: 50px; }
+#navi h1 a{display: block;width: 80px; height: 62px; background:url(../img/logo.png) no-repeat left top; background-size:contain;}
 
 /*line*/
-.line{border-bottom: 1px solid #4787f7;position: absolute; left: 0; bottom: 150px; width: 100%; padding:0 20px; box-sizing: border-box; z-index: 100;}
+.line{border-bottom: 1px solid #4787f7;position: absolute; left: 0; bottom: 100px; width: 100%; padding:0 20px; box-sizing: border-box; z-index: 2;}
 .line span{display: inline-block; padding-bottom: 1%; font-size: 30px; color:#fff; border-bottom:3px solid #fff; margin-bottom: -2px;}
 
 /*cont1*/
@@ -113,17 +112,8 @@
 .port_box .text h2{font-size: 14px; color:#a4a4a4; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; padding-bottom: 3%;}
 .port_box .text h3{font-size: 30px; text-transform: uppercase; padding-bottom: 3%; opacity: 0; transition:all 0.6s ease-in-out;}
 .port_box .text p{color:#a4a4a4; font-size: 15px; padding-bottom: 1.2%; opacity: 0;transition:all 1s ease-in-out;}
-.port_box .text a.view{display: inline-block; width: 200px; background-color:#2551a2; text-transform: uppercase; color:#fff; position: relative; line-height: 50px; padding-left: 33px; margin-top: 5%;  
-  background-image: linear-gradient(to left, transparent, transparent 50%, #2c63c5 50%, #2c63c5);
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all 0.5s ease-in;
-  opacity: 0; transform: translate(-20%,0);
-}
-.port_box .text a.view:after{content:""; width: 50px; height: 15px; background:url(../img/arrow-white.svg) no-repeat center; position: absolute; right:33px; top: 50%; transform: translateY(-50%); background-size: contain;}
-.port_box .text a.view:hover {
-  background-position: 0 0;
-}
+
+
 .port .mock{position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 60%; height: 450px; background:#aaa;  opacity: 0;transition:all 1.5s ease-in-out; transform: translate(10%,-50%);}
 .port1 .mock{background:url(../img/m-standard.png) no-repeat center; background-size:contain;}
 .port2 .mock{background:url(../img/m-responsive.png) no-repeat center; background-size:contain;}
@@ -132,18 +122,98 @@
 .port5 .mock{background:url(../img/m-megabox.png) no-repeat center; background-size:contain;}
 #cont3 .line span{color:#1830ec; border-color:#1830ec; width: 60%;}
 
+/*button*/
+.port .text .btn2{
+    display: block;
+    margin-top: 5%;
+    width: 200px; line-height: 50px;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2451a2;
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #2451a2;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+    transform: translate(-50%,0); opacity: 0;
+}
+
+
+.btn2:hover{
+    border: 1px solid #2451a2;
+	  color: #80ffd3!important;
+}
+.btn2::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #2451a2;
+    position: absolute;
+	  -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+	   box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+
+.btn2::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+	-ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn2:hover::before, .btn2:hover::before{
+	opacity:1;
+	width: 116%;
+}
+.btn2:hover::after, .btn2:hover::after{
+	opacity:1;
+	width: 120%;
+}
+
 /*parallax*/
 .show{}
 .port.show .text h3{transform: none;opacity: 1;}
 .port.show .text p{transform: none;opacity: 1;}
-.port.show .text a{transform: none;opacity: 1;}
+.port.show .btn2{transform: none;opacity: 1;}
 .port.show .mock{transform: translate(0,-50%); opacity: 1;}
 
 
 /*footer*/
 .footer{position: relative;}
-.footer h2{background:#2751a5; width: 145px; height: 145px; border-radius: 5px; position: absolute; left: 0; top: -50px; opacity: 0; transition: all 1.5s ease-in-out; transform: translateY(50%);}
-.footer h2 span{display: block; width: 90px; height: 38px; background:url(../img/footer_logo.png) no-repeat left top; background-size:contain; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.footer h2{background:#2751a5; width: 100px; height: 100px; border-radius: 5px; position: absolute; left: 0; top: -40px; opacity: 0; transition: all 1.5s ease-in-out; transform: translateY(50%);}
+.footer h2 span{display: block; width: 80px; height: 55px; background:url(../img/footer_logo.png) no-repeat left top; background-size:contain; position: absolute; left: 50%; top: 50%;transition: all 1.5s ease-in-out; transform: translate(-50%,-50%);}
 .footer .text{padding-top: 160px; float: left; width: 40%;}
 .footer .text p{text-transform: uppercase; color:#4a4a4a;}
 .footer .contact{padding: 80px 0 60px 100px; float: left; width: 60%; box-sizing: border-box;}
@@ -153,7 +223,7 @@
 .footer .contact em{font-size: 20px; font-weight: bold; letter-spacing: 1px; display: block;s}
 .footer .contact span{display: block; padding-top: 20px; color:#4a4a4a; width: auto;}
 .footer .contact a.sns{position: relative; display: inline-block; width: auto; height: 15px;}
-.footer .contact a.sns:after{content:""; position: absolute; left: 71px; top: 23px; width: 15px; height: 15px; padding-left: 5px; background:url(../img/insta.png)no-repeat center; background-size:contain;}
+.footer .contact a.sns:after{content:""; position: absolute; left: 80px; top: 23px; width: 15px; height: 15px; padding-left: 5px; background:url(../img/insta.png)no-repeat center; background-size:contain;}
 
 /*parallax*/
 .footer h2.show{opacity: 1; transform: none;}
@@ -173,7 +243,7 @@
 
   .cont2 .text p{font-size: 22px;}
 
-  .port .mock{width:60%; height: 450px;}
+  .port .mock{width:60%; height: 400px;}
 }
 
 @media (max-width: 1280px){
@@ -184,51 +254,51 @@
 
   .cont2 .text p{ font-size: 20px;}
 
-  .slick-prev,.slick-next{display: none !important;}
+  .line{bottom: 80px;}
 }
 
 @media (max-width:960px){
   .cont2 .text h2{font-size: 50px;}
   .cont2 .text p{font-size: 18px;}
 
-  .port .mock{width: 80%; height: 300px; top: 15%; left:50%; transform: translateX(-30%);}
+  .port .mock{width: 80%; height: 250px; top: 15%; left:50%; transform: translateX(-30%);}
   .port_box .text{left: 50%; transform: translateX(-50%); top: 50%; text-align: center;}
-  .port_box .text a.view{text-align: left;}
   .port.show .mock{transform: translate(-50%,0); }
+  .port .text .btn2{margin: 0 auto; margin-top: 5%; line-height: 40px;}
 }
 
 @media (max-width: 768px){
+  #navi h1{width: 50px; top: 20px; left: 20px;}
+
   .cont1 .text {left: 0; text-align: center; position: relative; z-index: 2;}
   .cont1 .text p {width: 100%; padding: 0 10% 5% 10%; box-sizing: border-box;}
   .cont2 .text{width: 100%;}
 
   .port_box .text h3{font-size: 25px;}
-  .port_box .text a.view{width: 150px; line-height: 40px; padding-left: 20px;}
-  .port_box .text a.view:after{width: 35px; right: 20px;}
+  .port_box .text .btn2{width: 150px; height: 40px;}
 
-  .footer h2{width: 100px; height: 100px;}
-  .footer h2 span{width: 60px; height: 32px;}
-  .footer .text{width: 100%; padding-top: 80px;}
+  .footer h2{width: 50px; height: 50px; top: -20px;}
+  .footer h2 span{width: 40px; height: 27px;}
+  .footer .text{width: 100%; padding-top: 50px;}
   .footer .contact{padding: 20px 0 0 0; width: 100%;}
   .footer .contact p{text-align: center;}
+  .footer .contact p:nth-child(1),.footer .contact p:nth-child(2){padding-bottom: 20px;}
   .footer .contact em{font-size: 16px;}
   .footer .contact span{padding-top: 10px;}
   .footer .contact a.sns{margin: 0 auto;}
   .footer .contact a.sns:after{top: 13px;}
+
+  .line{bottom: 50px;}
+
 }
 
 @media (max-width: 600px){
-  #navi h1{font-size: 30px; top: 20px;}
-  #navi a.ham{top:40px;}
-  #navi a.ham span{}
-
-  .line{bottom: 50px;}
+    
   .line span{padding-right: 100px;}
 
   .cont1 .text h2 {font-size: 40px; font-weight: bold;}
   .cont1 .text p{font-size: 14px;}
   .h-button{padding: 10px 40px;}
-
 
   .cont2 .text h2{font-size: 30px;}
   .cont2 .text p{font-size: 12px;}

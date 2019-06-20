@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    /*
-    $('.timer').countTo({
-        speed:2000,
-    });
-*/
+    /*$(window).load(function() {
+        $('#loading').hide();
+        $('.line').hide();
+     });*/
+
     //main-animation
     var main = $('#cont1');
     main.find('.gradient').addClass('show');
@@ -63,5 +63,75 @@ $(document).ready(function() {
         if(wScroll>=foot.offset().top-$(window).height()){
             foot.addClass('show');
         }
+    });
+
+    var navigation = {
+        // Variables
+        $nav: document.querySelector('.nav'),
+        $navTrigger: document.querySelector('.nav__trigger'),
+        $navContent: document.querySelector('.nav__content'),
+        transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+        
+        init: function() {
+            var self = this;
+    
+            // Handle the transitions
+            self.$navTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (!self.$navTrigger.classList.contains('is-active')) {
+                    // .nav--trigger active
+                    self.$navTrigger.classList.add('is-active');
+                    
+                    // .nav active
+                    if (!self.$nav.classList.contains('is-active')) {
+                        self.$nav.classList.add('is-active');
+                        self.$nav.addEventListener('transitionend', function(e) {
+                            if (e.propertyName == 'transform' && self.$navTrigger.classList.contains('is-active')) {
+                                self.$navContent.classList.add('is-active');
+                            }
+                        });
+                    } else {
+                        self.$navContent.classList.add('is-active');                    
+                    }
+    
+                    // no-csstransitions fallback
+                    if (document.documentElement.classList.contains('no-csstransitions')) {
+                        self.$navContent.classList.add('is-active');
+                    }
+                } else {
+                    // .nav--trigger inactive
+                    self.$navTrigger.classList.remove('is-active');
+                    
+                    // .nav__content inactive
+                    if (self.$navContent.classList.contains('is-active')) {
+                        self.$navContent.classList.remove('is-active');
+                        self.$navContent.addEventListener('transitionend', function(e) {
+                            if (e.propertyName == 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
+                                // .nav inactive
+                                self.$nav.classList.remove('is-active');
+                            }
+                        });
+                    } else {
+                        self.$nav.classList.remove('is-active');                    
+                    }
+    
+                    // no-csstransitions fallback
+                    if (document.documentElement.classList.contains('no-csstransitions')) {
+                        self.$nav.classList.add('is-active');
+                    }
+
+                    
+                }
+            });
+        }
+        
+    }
+    
+    navigation.init();
+    
+    var menu = $('.nav__list a')
+    menu.click(function(){
+        $('#navi').find('.nav__trigger').removeClass('is-active');
+        $('#navi').find('.nav').removeClass('is-active');
     });
 });

@@ -7,6 +7,7 @@
     <title>ㅈㅇㅈ - 포트폴리오</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/navi.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="assets/js/jquery.min_1.12.4.js"></script>
@@ -15,17 +16,23 @@
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,500,600,700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body>    
     <div id="wrap">
         <nav id="navi">
-            <h1><span class="ir_pm">logo</span></h1>
-            <a href="#" class="ham"><span class="ir_pm">메뉴</span></a>
-            <!--<ul class="menu">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>-->
+            <h1><a href="index.html"><span class="ir_pm">logo</span></a></h1>
+            <a href="#" class="nav__trigger">
+                <div class="bars"></div>
+            </a>
+            <div class="nav">
+                <div class="nav__content">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#cont1">home</a></li>
+                        <li class="nav__item"><a href="#cont2">about me</a></li>
+                        <li class="nav__item"><a href="#cont3">portfolio</a></li>
+                        <li class="nav__item"><a href="#footer">contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav><!--//navi-->
         <section id="contents">
             <div id="cont1">
@@ -86,7 +93,10 @@
                                     <h2>portfolio 01</h2>
                                     <h3>web standard</h3>
                                     <p>web standard</p><p>web accessibility</p><p>jquery plug-in</p>
-                                    <a href="#" class="view">view more</a>
+                                    <a href="#s" class="btn2">
+                                        <span>view more</span>
+                                     <div class="transition"></div>
+                                   </a>
                                 </div> 
                             </div>                      
                         </div>
@@ -106,7 +116,10 @@
                                     <h2>portfolio 02</h2>
                                     <h3>web responsive</h3>
                                     <p>web standard</p><p>web accessibility</p><p>responsive</p><p>jquery plug-in</p>
-                                    <a href="#" class="view">view more</a>
+                                    <a href="#s" class="btn2">
+                                        <span>view more</span>
+                                     <div class="transition"></div>
+                                   </a>
                                 </div>   
                             </div>   
                         </div>
@@ -126,7 +139,10 @@
                                     <h2>portfolio 03</h2>
                                     <h3>gabia</h3>
                                     <p>web standard</p><p>web accessibility</p><p>jquery plug-in</p>
-                                    <a href="#" class="view">view more</a>
+                                    <a href="#s" class="btn2">
+                                        <span>view more</span>
+                                     <div class="transition"></div>
+                                   </a>
                                 </div>       
                             </div>       
                         </div>
@@ -146,7 +162,10 @@
                                     <h2>portfolio 04</h2>
                                     <h3>ibk</h3>
                                     <p>web standard</p><p>web accessibility</p><p>jquery plug-in</p>
-                                    <a href="#" class="view">view more</a>
+                                    <a href="#s" class="btn2">
+                                        <span>view more</span>
+                                     <div class="transition"></div>
+                                   </a>
                                 </div>       
                             </div>   
                         </div>
@@ -166,7 +185,10 @@
                                     <h2>portfolio 05</h2>
                                     <h3>megabox</h3>
                                     <p>web standard</p><p>responsive</p><p>jquery plug-in</p>
-                                    <a href="#" class="view">view more</a>
+                                    <a href="#s" class="btn2">
+                                        <span>view more</span>
+                                     <div class="transition"></div>
+                                   </a>
                                 </div>   
                             </div>            
                         </div>
@@ -194,8 +216,8 @@
                         <div class="contact">
                             <p><em>Email me</em> <span>yuya92@hanamil.net</span></p>
                             <p><em>Call me</em> <span>010.4520.4393</span></p>
-                            <p><em>I live in</em> <span>World Cup-ro 15-gil, Mapo-gu<b>, Seoul</b></span></p>
-                            <p><em>Connect</em> <a href="https://www.instagram.com/zinewfilm/" class="sns" target="_blank"><span>instagram</span></a></p>
+                            <p><em>I live in</em> <span>World Cup-ro 15-gil, Mapo-gu, Seoul</span></p>
+                            <p><em>Connect</em> <a href="https://www.instagram.com/zinewfilm/" class="sns" target="_blank"><span>@zinewfilm</span></a></p>
                         </div>
                     </div>
                 </div>
