@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('.line').hide();
      });*/
 
+     
     //main-animation
     var main = $('#cont1');
     main.find('.gradient').addClass('show');
@@ -42,13 +43,21 @@ $(document).ready(function() {
               
             });
         }
+        
+        if(wScroll>=$('#cont2').offset().top){
+            $('#navi').find('svg').css('fill','#000');
+        }else{
+            $('#navi').find('svg').css('fill','#fff');   
+        }
 
         //portfolio-animation
+
         if(wScroll>=cont.eq(0).offset().top-$(window).height()/3){
             cont.eq(0).addClass('show');
         }
         if(wScroll>=cont.eq(1).offset().top-$(window).height()/3){
             cont.eq(1).addClass('show');
+
         }
         if(wScroll>=cont.eq(2).offset().top-$(window).height()/3){
             cont.eq(2).addClass('show');
@@ -137,4 +146,54 @@ $(document).ready(function() {
         $('#navi').find('.nav__trigger').removeClass('is-active');
         $('#navi').find('.nav').removeClass('is-active');
     });
+
+    function counter() {
+        if ($('.about .count').size()) {
+            $c = $('.about .count');
+    
+            $c.each(function () {
+                var $this = $(this);
+                $this.data('target', parseInt($this.html()));
+                $this.data('counted', false);
+                $this.html('0');
+            });
+    
+            $(window).bind('scroll', function () {
+                var speed = 5000;
+    
+                $c.each(function (i) {
+                    var $t = $(this);
+                    if (!$t.data('counted') && $(window).scrollTop() + $(window).height() >= $t.offset().top) {
+    
+                        $t.data('counted', true);
+                        
+                        $t.animate({
+                            dummy: 1
+                        }, {
+                            duration: speed,
+                            step: function (now) {
+                                var $this = $(this);
+                                var val = Math.round($this.data('target') * now);
+                                $this.html(val);
+                            },
+                            easing: 'easeInOutQuart'
+                        });
+    
+                        // easy pie
+                        $('.pie').easyPieChart({
+                            barColor: '#000',
+                            trackColor: '#ccc',
+                            scaleColor: '#000',
+                            scaleLength: 5,
+                            lineWidth: 1,
+                            size: 200,
+                            lineCap: 'round',
+                            animate: { duration: speed, enabled: true }
+                        });
+                    }
+                });
+            }).triggerHandler('scroll');
+        }
+    }
+    counter();
 });
