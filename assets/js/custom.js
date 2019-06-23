@@ -43,12 +43,27 @@ $(document).ready(function() {
               
             });
         }
-        
+        //logo
         if(wScroll>=$('#cont2').offset().top){
             $('#navi').find('svg').css('fill','#000');
         }else{
             $('#navi').find('svg').css('fill','#fff');   
         }
+
+        //line
+        if(wScroll>=$('#cont1').offset().top){
+            $('.line').find('span').html('01');
+            $('.line').addClass('show1');
+        }
+        if(wScroll>=$('#cont2').offset().top-$(window).height()/5){
+            $('.line').find('span').html('02');
+            $('.line').addClass('show2');
+        }
+        if(wScroll>=$('#cont3').offset().top){
+            $('.line').find('span').html('03');
+            $('.line').addClass('show3');
+        }
+        
 
         //portfolio-animation
 
