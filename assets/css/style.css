@@ -98,8 +98,9 @@
 }
 
 
-.port .mock{position: absolute; right: 100px; top: 50%; transform: translateY(-50%); width: 50%;opacity: 1;transition:all 1.5s ease-in-out; transform: translate(10%,-50%);}
+.port .mock{position: absolute; right: 100px; top: 50%; transform: translateY(-50%); width: 50%;opacity: 0;transition:all 1.5s ease-in-out; transform: translate(10%,-50%);}
 .right .mock{left: 100px;transform: translate(-10%,-50%);}
+.port6 .mock{width: 25%; left: 350px;}
 #cont3 .line span{color:#1830ec; border-color:#1830ec; width: 60%;}
 
 /*parallax*/
