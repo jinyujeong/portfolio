@@ -224,6 +224,7 @@ transition-delay: 0.15s;
   .cont2 .skill li span{bottom: -40px;}
   .cont2 .skill li:nth-child(1){margin-bottom: 50px;}
   .cont2 .skill li:nth-child(2){margin-bottom: 50px;}
+  .cont2 .skill li .count{font-size: 35px;}
 
   .port .mock{width: 80%; height: 250px; top: 15%; left:50%; transform: translateX(-30%);}
   .port_box .text{left: 50%; transform: translateX(-50%); top: 50%; text-align: center;}
