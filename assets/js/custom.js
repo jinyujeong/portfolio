@@ -55,7 +55,7 @@ $(document).ready(function() {
             $('.line').find('span').html('01');
             $('.line').addClass('show1');
         }
-        if(wScroll>=$('#cont2').offset().top){
+        if(wScroll>=$('#cont2').offset().top-$(window).height()/5){
             $('.line').find('span').html('02');
             $('.line').addClass('show2');
         }

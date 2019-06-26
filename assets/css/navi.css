@@ -177,9 +177,14 @@
   }
   
   
-  @media(max-width:900px){
+  @media(max-width:960px){
     .nav__trigger{right: 20px; top: 1rem;}
     .nav__trigger .bars, .nav__trigger .bars:before, .nav__trigger .bars:after{height: 3px;}
     .nav__trigger .bars:before{transform: translateY(-6px);}
     .nav__trigger .bars:after{transform: translateY(6px);}
+
+    .nav{background:  #172fe7;}
+    .nav__list a:hover{
+      color:#fff;
+    }
   }

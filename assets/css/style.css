@@ -32,9 +32,9 @@
 .cont1 .line span:after{width: 20%; background:#fff;}
 .cont2 .line span:after{width: 40%; background:#1830ec;}
 #cont3 .line span:after{width: 60%; background:#1830ec;}
-.cont1 .line.show1 span:after{opacity: 1; animation: bar1 0.5s;}
-.cont2 .line.show2 span:after{opacity: 1; animation: bar2 0.5s;}
-#cont3 .line.show3 span:after{opacity: 1; animation: bar3 0.5s;}
+.cont1 .line.show1 span:after{opacity: 1; animation: bar1 0.7s;}
+.cont2 .line.show2 span:after{opacity: 1; animation: bar2 0.7s;}
+#cont3 .line.show3 span:after{opacity: 1; animation: bar3 0.7s;}
 
 @keyframes bar1{
   0%{width: 0;}
@@ -220,11 +220,16 @@ transition-delay: 0.15s;
 @media (max-width:960px){
   .cont2 .text h2{font-size: 50px;}
   .cont2 .text p{font-size: 18px;}
+  .cont2 .skill li{width: 50%;}
+  .cont2 .skill li span{bottom: -40px;}
+  .cont2 .skill li:nth-child(1){margin-bottom: 50px;}
+  .cont2 .skill li:nth-child(2){margin-bottom: 50px;}
 
   .port .mock{width: 80%; height: 250px; top: 15%; left:50%; transform: translateX(-30%);}
   .port_box .text{left: 50%; transform: translateX(-50%); top: 50%; text-align: center;}
   .port.show .mock{transform: translate(-50%,0); }
   .port .text .btn2{margin: 0 auto; margin-top: 5%; line-height: 40px;}
+
 }
 
 @media (max-width: 768px){
@@ -262,8 +267,9 @@ transition-delay: 0.15s;
 
   .cont2 .text h2{font-size: 30px;}
   .cont2 .text p{font-size: 12px;}
-  .cont2 .skill span{font-size: 20px;}
-  .cont2 .skill p {width: 48%;}
+  .cont2 .skill li{width: 100%;}
+  .cont2 .skill li{margin-bottom: 50px;}
+
 
   .port .mock{height: 210px;}
   .port_box .text h3{font-size: 20px;}
