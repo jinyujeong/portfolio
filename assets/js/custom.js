@@ -4,12 +4,10 @@ $(document).ready(function() {
         $('.line').hide();
      });*/
 
-     
-    //main-animation
-    var main = $('#cont1');
-    main.find('.gradient').addClass('show');
+
 
     //animation
+    var main = $('.cont1');
     var count = $('#cont2');
     var cont = $("#cont3 > div.port");
     var foot = $('.footer h2');
@@ -66,6 +64,9 @@ $(document).ready(function() {
         
 
         //portfolio-animation
+        if(wScroll>=main.offset().top){
+            main.addClass('show');
+        }
 
         if(wScroll>=cont.eq(0).offset().top-$(window).height()/3){
             cont.eq(0).addClass('show');
