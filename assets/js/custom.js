@@ -19,7 +19,7 @@ function imagesProgress(){
 		
 		current += ( target - current) * 0.1;
 		$progressBar.css({ width: current + '%' });
-		$progressText.text( Math.floor(current) + '%' );
+		$progressText.text( Math.floor(current));
 		
 		if(current >= 100){
 			clearInterval(progressTimer);
