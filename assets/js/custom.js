@@ -80,6 +80,13 @@ imagesProgress();
             $('#navi').find('svg').css('fill','#fff');   
         }
 
+        if(wScroll>=$('#cont2').offset().top){
+            $('#navi').find('.nav__trigger').addClass('show');
+        }else{
+            $('#navi').find('.nav__trigger').removeClass('show');   
+        }
+
+
         //line
         if(wScroll>=$('#cont1').offset().top){
             $('.line').find('span').html('01');

@@ -14,7 +14,7 @@
   .nav__trigger .bars, .nav__trigger .bars:before, .nav__trigger .bars:after {
     width: 28px;
     height: 4px;
-    background-color: #000;
+    background-color: #fff;
     transition: 0.2s ease-in-out;
     border-radius: 4px;
   }
@@ -25,6 +25,9 @@
     top: 0;
     left: 0;
     will-change: transform;
+  }
+  .nav__trigger.show .bars, .nav__trigger.show .bars:before, .nav__trigger.show .bars:after{
+      background-color: #000;
   }
   .nav__trigger .bars:before {
     -webkit-transform: translateY(-8px);
