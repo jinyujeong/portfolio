@@ -5,7 +5,7 @@
 /* progress */
 .progress {background: #1930EE; color: #fff; width: 100%; height: 100%; position: absolute; z-index: 5000;}
 .progress-bar {border-top: 1px solid rgba(160,160,160); position: absolute; top: 50%; width: 0%;}
-.progress-text {font-size: 14px; margin-top: 10px; position: absolute; text-align: center; top: 50%; width: 100%;}
+.progress-text {font-size: 80px; position: absolute; text-align: center; top: 50%; width: 100%; color:#fff; font-weight: bold; transform: translateY(-50%);}
 .porgress-complete .progress-bar {border-top-color: rgb(255,255,255);}
 
 /*layout*/
@@ -36,13 +36,13 @@
 .cont1 .line span:after{width: 20%; background:#fff;}
 .cont2 .line span:after{width: 40%; background:#1830ec;}
 #cont3 .line span:after{width: 60%; background:#1830ec;}
-.cont1 .line.show1 span:after{opacity: 1; animation: bar1 0.7s;}
+.cont1 .line.show1 span:after{opacity: 1; animation: bar1 0.7s; animation-delay: 3s;}
 .cont2 .line.show2 span:after{opacity: 1; animation: bar2 0.7s;}
 #cont3 .line.show3 span:after{opacity: 1; animation: bar3 0.7s;}
 
 @keyframes bar1{
-  0%{width: 0;}
-  100%{width: 20%;}
+  0%{width: 0; opacity: 0;}
+  100%{width: 20%; opacity: 1;}
 }
 @keyframes bar2{
   0%{width: 0;}
