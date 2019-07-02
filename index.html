@@ -7,6 +7,7 @@
     <title>ㅈㅇㅈ - 포트폴리오</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/loading.css">
     <link rel="stylesheet" href="assets/css/navi.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -20,8 +21,12 @@
 </head>
 <body> 
     <div class="progress" id="progress"> 
-        <span class="progress-bar"></span>
-        <span class="progress-text">0</span>
+        <div class='loader'>
+            <div class='article'>
+                <div class='page'></div>
+            </div>
+        </div>
+        <span class="progress-text">0%</span>
     </div>
     <!-- //progress -->
         
@@ -124,6 +129,7 @@
                                 -->
                                 <div class="skill about">
                                     <ul class="clearfix">
+                                        <li class="pie" data-percent="70"><strong class="count">70</strong><span>PHOTOSHOP</span></li>
                                         <li class="pie" data-percent="90"><strong class="count">90</strong><span>HTML5</span></li>
                                         <li class="pie" data-percent="90"><strong class="count">90</strong><span>CSS3</span></li>
                                         <li class="pie" data-percent="60"><strong class="count">60</strong><span>JAVASCRIPT</span></li>
@@ -145,7 +151,7 @@
                                     <p class="st">portfolio 01</p>
                                     <h3>web standard page</h3>
                                     <p>This web page was created to show that I can. It is based on <span>web standard</span>. It works with <span>web-accessibility</span> and <span>jquery plug-in</span>. It is a project by myself.</p>
-                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='port/standard/index.html' target='_blank'>
+                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='../class/webstandard/web/index.html' target='_blank'>
                                         <span>m</span>
                                         <span>o</span>
                                         <span>r</span>
@@ -165,7 +171,7 @@
                                     <p class="st">portfolio 02</p>
                                     <h3>web responsive page</h3>
                                     <p>This web page was created to show that I can. It is based on <span>web standard</span>. It works with <span>web-accessibility</span>, <span>responsive</span> and <span>jquery plug-in</span>. It is a project by myself.</p>
-                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='port/responsive/index.html' target='_blank'>
+                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='../class/responsive/web/index.html' target='_blank'>
                                         <span>m</span>
                                         <span>o</span>
                                         <span>r</span>
@@ -185,7 +191,7 @@
                                     <p class="st">portfolio 03</p>
                                     <h3>gabia</h3>
                                     <p>This web page was created to show that I can. It is based on <span>web standard</span>. It works with <span>web-accessibility</span> and <span>jquery plug-in</span>. It is a project by myself.</p>
-                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='port/gabia/index.html' target='_blank'>
+                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='../class/gabia/web/index.html' target='_blank'>
                                         <span>m</span>
                                         <span>o</span>
                                         <span>r</span>
@@ -205,7 +211,7 @@
                                     <p class="st">portfolio 04</p>
                                     <h3>ibk</h3>
                                     <p>This web page was created to show that I can. It is based on <span>web standard</span>. It works with <span>web-accessibility</span>, <span>cross-browsing</span> and <span>jquery plug-in</span>. It is a project by myself.</p>
-                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='port/ibk/index.html' target='_blank'>
+                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='../class/ibk/web/index.html' target='_blank'>
                                         <span>m</span>
                                         <span>o</span>
                                         <span>r</span>
@@ -225,7 +231,7 @@
                                     <p class="st">portfolio 05</p>
                                     <h3>megabox</h3>
                                     <p>This web page was created to show that I can. It is based on <span>web standard</span>. It works with <span>responsive web</span> and <span>jquery plug-in</span>. It is a project by myself.</p>
-                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='port/megabox/index.html' target='_blank'>
+                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='../class/megabox/web/index.html' target='_blank'>
                                         <span>m</span>
                                         <span>o</span>
                                         <span>r</span>
@@ -245,7 +251,7 @@
                                     <p class="st">portfolio 06</p>
                                     <h3>cgv mobile</h3>
                                     <p>This web page was created to show that I can. It is based on just <span>mobile site</span>. It works with <span>web standard</span>, <span>web-accessibility</span> and <span>jquery plug-in</span>. It is a project by myself.</p>
-                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='port/cgv/index.html' target='_blank'>
+                                    <a aria-label='View' class='h-button centered btn' data-text='view' href='../class/cgv/web/index.html' target='_blank'>
                                         <span>m</span>
                                         <span>o</span>
                                         <span>r</span>
@@ -258,9 +264,9 @@
                     <div class="mock"><img src="assets/img/cgv01.png" alt="cgv사이트 목업"></div>
                 </div>
             </div><!--//cont3-->
-            <!-- <div id="cont4">
+            <div id="cont4">
                 <p style="text-align: center">animation</p>
-            </div> -->
+            </div>
             <!--//cont4-->
         </section>
         <!--//contents-->

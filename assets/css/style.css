@@ -2,11 +2,6 @@
 
 /*font*/
 /* font-family: 'Encode Sans Expanded', sans-serif; */
-/* progress */
-.progress {background: #1930EE; color: #fff; width: 100%; height: 100%; position: absolute; z-index: 5000;}
-.progress-bar {border-top: 1px solid rgba(160,160,160); position: absolute; top: 50%; width: 0%;}
-.progress-text {font-size: 100px; position: absolute; text-align: center; top: 50%; width: 100%; color:rgba(255,255,255,0.7); transform: translateY(-50%);}
-.porgress-complete .progress-bar {border-top-color: rgb(255,255,255);}
 
 /*layout*/
 #wrap{}
@@ -17,7 +12,7 @@
     background:url(../img/m2.jpg) no-repeat left top; background-size:cover; position: relative;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);}
 #cont1:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(4,10,180,0.41); }
 
-#cont2{background:#fff;}
+#cont2{background:#fff ;}
 #cont3{width: 100%;}
 #cont4{width: 100%; height: 100vh; background:#aaa;}
 #footer{width: 100%; background-repeat: repeat; background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, #eee, #eee 20%, #fff 20%, #fff 90%, #eee 90%);
@@ -81,7 +76,7 @@
 .cont2 .text p{font-family: 'Titillium Web'; font-size: 23px; color:#666; width: 60%; margin: 0 auto; font-weight: 100;}
 .cont2 .skill{padding-top: 5%;}
 .cont2 .skill ul{}
-.cont2 .skill li{width: 25%; float: left; position: relative;}
+.cont2 .skill li{width: 20%; float: left; position: relative;}
 .cont2 .skill li .count{position: absolute; left: 50%; top: 48%; transform: translate(-50%,-50%); font-size: 50px; font-weight: 100; font-family: 'Titillium Web';}
 .cont2 .skill li .count:after{content:"%";}
 .cont2 .skill li span{position: absolute; left: 50%; bottom: -50px; transform: translatex(-50%); font-size: 20px; font-weight: 100; font-family: 'Titillium Web';}
