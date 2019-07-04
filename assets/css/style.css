@@ -5,21 +5,19 @@
 
 /*layout*/
 #navi{position: fixed; width: 100%; z-index: 10;}
-
-
-#wrap{width: 100%; height: 100%;}
 #navi:before{content:""; position: absolute; left: 0; top: 0; width:100%; height: 0; background: rgba(0, 0, 0, 0.7); opacity: 0; transition: all 0.55s; z-index: -10;}
 #navi.show:before{opacity: 1; width: 100%; height: 100vh; z-index: 5;}
+
+#wrap{width: 100%; height: 100%;}
 #contents{}
 #cont1{height: 100vh;
         filter: saturate(90%);
     background:url(../img/m2.jpg) no-repeat left top; background-size:cover; position: relative;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);}
 #cont1:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(4,10,180,0.41); }
-
-
 #cont2{background:#fff;}
 #cont3{width: 100%;}
 #cont4{width: 100%; height: 100vh; background:#aaa;}
+#cont5{width: 100%; height: 100vh; background:#2041f8;}
 #footer{width: 100%; background-repeat: repeat; background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, #eee, #eee 20%, #fff 20%, #fff 90%, #eee 90%);
     background-size: 10px 10px; background-attachment: fixed; border-top:1px solid #eee;}
 
@@ -120,7 +118,6 @@
 .port6 .mock{width: 35%; left: 300px;}
 #cont3 .line span{color:#1830ec; border-color:#1830ec; width: 60%;}
 
-/*parallax*/
 .show{}
 .port.show .text h3{transform: none;opacity: 1; }
 .port.show .text p.st{transform: none;opacity: 1;}
@@ -129,6 +126,34 @@
 .right.show .btn{transform: translate(0,0); opacity: 1;}
 .port.show .mock{transform: translate(0,-50%); opacity: 1;}
 .right.show .mock{transform: translate(0,-50%); opacity: 1;}
+
+/*cont5*/
+.cont5{}
+.cont5 .cont5_box{padding-top: 220px;}
+.cont5 .left{float: left; width: 60%; height: 600px; background:#aaa;}
+.cont5 .right{float: left; width: 40%; height: 600px; padding-left: 10%; box-sizing: border-box;}
+.cont5 .right h4{color:#fff; font-size: 50px; text-transform: uppercase;}
+
+/*footer*/
+.footer{position: relative;}
+.footer h2{background:#2751a5; width: 100px; height: 100px; border-radius: 5px; position: absolute; left: 0; top: -40px; opacity: 0; transition: all 1.5s ease-in-out; transform: translateY(50%);}
+.footer h2 span{display: block; width: 80px; height: 55px; background:url(../img/footer_logo.png) no-repeat left top; background-size:contain; position: absolute; left: 50%; top: 50%;transition: all 1.5s ease-in-out; transform: translate(-50%,-50%);}
+.footer .text{padding-top: 160px; float: left; width: 40%;}
+.footer .text p{text-transform: uppercase; color:#4a4a4a;}
+.footer .contact{padding: 80px 0 60px 100px; float: left; width: 60%; box-sizing: border-box;}
+.footer .contact p{display: inline-block; width: 49%;}
+.footer .contact p:nth-child(1){padding-bottom: 50px;}
+.footer .contact p:nth-child(2){padding-bottom: 50px;}
+.footer .contact em{font-size: 20px; font-weight: bold; letter-spacing: 1px; display: block;}
+.footer .contact span{display: block; padding-top: 20px; color:#4a4a4a; width: auto;}
+.footer .contact a.sns{position: relative; display: inline-block; width: auto; height: 15px;}
+.footer .contact a.sns:after{content:""; position: absolute; left: 80px; top: 23px; width: 15px; height: 15px; padding-left: 5px; background:url(../img/insta.png)no-repeat center; background-size:contain;}
+
+/*parallax*/
+.footer h2.show{opacity: 1; transform: none;}
+
+
+
 
 /*button*/
 .h-button {
@@ -185,26 +210,6 @@ transition-delay: 0.125s;
 .h-button:hover span:nth-child(6), .h-button:focus span:nth-child(6) {
 transition-delay: 0.15s;
 }
-
-
-
-/*footer*/
-.footer{position: relative;}
-.footer h2{background:#2751a5; width: 100px; height: 100px; border-radius: 5px; position: absolute; left: 0; top: -40px; opacity: 0; transition: all 1.5s ease-in-out; transform: translateY(50%);}
-.footer h2 span{display: block; width: 80px; height: 55px; background:url(../img/footer_logo.png) no-repeat left top; background-size:contain; position: absolute; left: 50%; top: 50%;transition: all 1.5s ease-in-out; transform: translate(-50%,-50%);}
-.footer .text{padding-top: 160px; float: left; width: 40%;}
-.footer .text p{text-transform: uppercase; color:#4a4a4a;}
-.footer .contact{padding: 80px 0 60px 100px; float: left; width: 60%; box-sizing: border-box;}
-.footer .contact p{display: inline-block; width: 49%;}
-.footer .contact p:nth-child(1){padding-bottom: 50px;}
-.footer .contact p:nth-child(2){padding-bottom: 50px;}
-.footer .contact em{font-size: 20px; font-weight: bold; letter-spacing: 1px; display: block;}
-.footer .contact span{display: block; padding-top: 20px; color:#4a4a4a; width: auto;}
-.footer .contact a.sns{position: relative; display: inline-block; width: auto; height: 15px;}
-.footer .contact a.sns:after{content:""; position: absolute; left: 80px; top: 23px; width: 15px; height: 15px; padding-left: 5px; background:url(../img/insta.png)no-repeat center; background-size:contain;}
-
-/*parallax*/
-.footer h2.show{opacity: 1; transform: none;}
 
 /* mediaquery */
 
