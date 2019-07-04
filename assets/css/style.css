@@ -4,15 +4,20 @@
 /* font-family: 'Encode Sans Expanded', sans-serif; */
 
 /*layout*/
-#wrap{}
 #navi{position: fixed; width: 100%; z-index: 10;}
+
+
+#wrap{width: 100%; height: 100%;}
+#navi:before{content:""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); opacity: 0; transition: all 0.5s; z-index: -10;}
+#navi.show:before{opacity: 1; z-index: 5;}
 #contents{}
 #cont1{height: 100vh;
         filter: saturate(90%);
     background:url(../img/m2.jpg) no-repeat left top; background-size:cover; position: relative;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);}
 #cont1:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(4,10,180,0.41); }
 
-#cont2{background:#fff ;}
+
+#cont2{background:#fff;}
 #cont3{width: 100%;}
 #cont4{width: 100%; height: 100vh; background:#aaa;}
 #footer{width: 100%; background-repeat: repeat; background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, #eee, #eee 20%, #fff 20%, #fff 90%, #eee 90%);
@@ -72,14 +77,23 @@
 /*cont2*/
 .cont2{position: relative; height: 100vh;}
 .cont2 .text{position: absolute;left:50%; top: 45%; transform: translate(-50%,-50%); text-align: center; width: 100%;}
-.cont2 .text h2{font-family: Anton;font-size: 66px;font-weight: 500; padding-bottom: 3%;}
-.cont2 .text p{font-family: 'Titillium Web'; font-size: 23px; color:#666; width: 60%; margin: 0 auto; font-weight: 100;}
+.cont2 .text h2{font-family: Anton;font-size: 66px;font-weight: 500; padding-bottom: 3%; opacity: 0; transform: translateY(-40%); transition:all 1.2s ease-in-out;}
+.cont2 .text p{font-family: 'Titillium Web'; font-size: 23px; color:#666; width: 60%; margin: 0 auto; font-weight: 100; opacity: 0; transition:all 1s ease-in-out; transform: translateX(30%);}
 .cont2 .skill{padding-top: 5%;}
 .cont2 .skill ul{}
-.cont2 .skill li{width: 20%; float: left; position: relative;}
+.cont2 .skill li{width: 20%; float: left; position: relative; transform: translateY(40%); transition:all 1s ease-in-out; opacity: 0;}
+.cont2 .skill li:nth-child(1){transition-delay: 0;}
+.cont2 .skill li:nth-child(2){transition-delay: 0.2s;}
+.cont2 .skill li:nth-child(3){transition-delay: 0.4s;}
+.cont2 .skill li:nth-child(4){transition-delay: 0.8s;}
+.cont2 .skill li:nth-child(5){transition-delay: 1s;}
 .cont2 .skill li .count{position: absolute; left: 50%; top: 48%; transform: translate(-50%,-50%); font-size: 50px; font-weight: 100; font-family: 'Titillium Web';}
 .cont2 .skill li .count:after{content:"%";}
 .cont2 .skill li span{position: absolute; left: 50%; bottom: -50px; transform: translatex(-50%); font-size: 20px; font-weight: 100; font-family: 'Titillium Web';}
+
+.cont2.show h2{transform: none; opacity: 1;}
+.cont2.show p{transform: none; opacity: 1;}
+.cont2.show .skill li{transform: none; opacity: 1;}
 
 /*cont3*/
 .port{position: relative; width: 100%; height: 100%;overflow: hidden;}
@@ -92,10 +106,10 @@
 .port_box{height: 100vh;position: relative; z-index: 2;}
 .port_box .text{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 40%;}
 .right .port_box .text{margin-left: 67%;}
-.port_box .text p.st{font-size: 14px; color:#3AC5CA; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; position: relative;}
+.port_box .text p.st{font-size: 14px; color:#3AC5CA; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; position: relative; transform: translateY(-40%); opacity: 0;transition:all 0.8s ease-in-out;}
 .port_box .text p.st:after{content:""; width: 40px; height:2px; background:#3AC5CA; position: absolute; top: -10px; left: 0;}
-.port_box .text h3{margin-bottom: 5%; opacity: 0;font-family: 'Anton'; font-size: 60px; text-transform: uppercase; transition:all 1s ease-in-out;}
-.port_box .text p{width: 80%; color:#666; font-size: 16px; line-height: 25px; padding-bottom: 1.2%; opacity: 0;transition:all 1s ease-in-out;}
+.port_box .text h3{margin-bottom: 5%; opacity: 0;font-family: 'Anton'; font-size: 60px; text-transform: uppercase; transform: translateX(20%); transition:all 1s ease-in-out;}
+.port_box .text p{width: 80%; color:#666; font-size: 16px; line-height: 25px; padding-bottom: 1.2%; opacity: 0;transition:all 1.5s ease-in-out;}
 .port_box .text p span{text-decoration: underline;}
 .port_box .text .btn{position: relative; display: block; margin-top: 50px; width: 100px; transform: translate(-20%,0); opacity: 0;transition:all 1s ease-in-out;}
 .right .text .btn{ transform: translate(20%,0); opacity: 0;transition:all 1s ease-in-out;}
@@ -109,6 +123,7 @@
 /*parallax*/
 .show{}
 .port.show .text h3{transform: none;opacity: 1; }
+.port.show .text p.st{transform: none;opacity: 1;}
 .port.show .text p{transform: none;opacity: 1;}
 .port.show .btn{transform: translate(0,0); opacity: 1;}
 .right.show .btn{transform: translate(0,0); opacity: 1;}

@@ -41,6 +41,7 @@ imagesProgress();
     //animation
     var main = $('.cont1');
     var count = $('#cont2');
+    var cont2 = $('.cont2');
     var cont = $("#cont3 > div.port");
     var foot = $('.footer h2');
 
@@ -107,6 +108,10 @@ imagesProgress();
             main.addClass('show');
         }
 
+        if(wScroll>=cont2.offset().top-$(window).height()/3){
+            cont2.addClass('show');
+        }
+
         if(wScroll>=cont.eq(0).offset().top-$(window).height()/3){
             cont.eq(0).addClass('show');
         }
@@ -152,6 +157,7 @@ imagesProgress();
                     // .nav active
                     if (!self.$nav.classList.contains('is-active')) {
                         self.$nav.classList.add('is-active');
+                        $('#wrap').addClass('show');
                         self.$nav.addEventListener('transitionend', function(e) {
                             if (e.propertyName == 'transform' && self.$navTrigger.classList.contains('is-active')) {
                                 self.$navContent.classList.add('is-active');
@@ -168,6 +174,7 @@ imagesProgress();
                 } else {
                     // .nav--trigger inactive
                     self.$navTrigger.classList.remove('is-active');
+                    $('#wrap').removeClass('show');
                     
                     // .nav__content inactive
                     if (self.$navContent.classList.contains('is-active')) {
@@ -251,4 +258,11 @@ imagesProgress();
         }
     }
     counter();
+
+    $('.mobile').click(function(){
+        var win = window.open("http://jinyu.dothome.co.kr/class/cgv/web/index.html", "PopupWin", "width=414,height=700");
+    })
+    
+
+
 });

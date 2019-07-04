@@ -49,12 +49,13 @@
   }
   
   .nav {
-    width: 100%;
+    width: 50%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     bottom: 0;
-    background-image:linear-gradient(to right, rgba(0,0,0,0.8) 50%, #172fe7 50%) ;
+    z-index: 10;
+    background: #172fe7;
     -webkit-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
     transition: 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -160,7 +161,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-left: 50%;
   }
   .nav__list a{
     display: inline-block;
@@ -191,4 +191,7 @@
     .nav__list a:hover{
       color:#fff;
     }
+  }
+  @media(max-width:768px){
+    .nav {width: 100%;}
   }
