@@ -132,9 +132,9 @@ imagesProgress();
             cont.eq(5).addClass('show');
         }
         
-        if(wScroll>=foot.offset().top-$(window).height()){
-            foot.addClass('show');
-        }
+        //if(wScroll>=foot.offset().top-$(window).height()){
+        //    foot.addClass('show');
+        //}
     });
 
     var navigation = {
