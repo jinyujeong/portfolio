@@ -157,7 +157,7 @@ imagesProgress();
                     // .nav active
                     if (!self.$nav.classList.contains('is-active')) {
                         self.$nav.classList.add('is-active');
-                        $('#wrap').addClass('show');
+                        $('#navi').addClass('show');
                         self.$nav.addEventListener('transitionend', function(e) {
                             if (e.propertyName == 'transform' && self.$navTrigger.classList.contains('is-active')) {
                                 self.$navContent.classList.add('is-active');
@@ -174,7 +174,7 @@ imagesProgress();
                 } else {
                     // .nav--trigger inactive
                     self.$navTrigger.classList.remove('is-active');
-                    $('#wrap').removeClass('show');
+                    $('#navi').removeClass('show');
                     
                     // .nav__content inactive
                     if (self.$navContent.classList.contains('is-active')) {
