@@ -87,20 +87,6 @@ imagesProgress();
             $('#navi').find('.nav__trigger').removeClass('show');   
         }
 
-
-        //line
-        if(wScroll>=$('#cont1').offset().top){
-            $('.line').find('span').html('01');
-            $('.line').addClass('show1');
-        }
-        if(wScroll>=$('#cont2').offset().top-$(window).height()/5){
-            $('.line').find('span').html('02');
-            $('.line').addClass('show2');
-        }
-        if(wScroll>=$('#cont3').offset().top){
-            $('.line').find('span').html('03');
-            $('.line').addClass('show3');
-        }
         
 
         //portfolio-animation
@@ -207,6 +193,7 @@ imagesProgress();
     menu.click(function(){
         $('#navi').find('.nav__trigger').removeClass('is-active');
         $('#navi').find('.nav').removeClass('is-active');
+        $('#navi').removeClass('show');
     });
 
     function counter() {
