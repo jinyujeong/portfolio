@@ -263,13 +263,13 @@ imagesProgress();
 
     $this2.mouseenter(function(){
         $(this).addClass('show');
-        $this.parent().css('color','#9197b8');
-        $this.css('color','#fff');
+        $this2.parent().css('color','#9197b8');
+        $this2.css('color','#fff');
     })
     $this2.mouseleave(function(){
         $(this).removeClass('show');
-        $this.parent().css('color','#ddd');
-        $this.css('color','#ddd');
+        $this2.parent().css('color','#ddd');
+        $this2.css('color','#ddd');
     })
     
 });
