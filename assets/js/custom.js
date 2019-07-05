@@ -250,6 +250,18 @@ imagesProgress();
         var win = window.open("http://jinyu.dothome.co.kr/class/cgv/web/index.html", "PopupWin", "width=414,height=700");
     })
     
-
-
+    
+    var $this = $('.cont5 .right').find('strong')
+    
+    $this.mouseenter(function(){
+        $(this).addClass('show');
+        $this.parent().css('color','#9197b8');
+        $this.css('color','#fff');
+    })
+    $this.mouseleave(function(){
+        $(this).removeClass('show');
+        $this.parent().css('color','#ddd');
+        $this.css('color','#ddd');
+    })
+    
 });
