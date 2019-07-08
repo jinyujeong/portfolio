@@ -113,42 +113,27 @@
 .right.show .mock{transform: translate(0,-50%); opacity: 1;}
 
 /*cont5*/
-.cont5{height: 100%;}
-.cont5 .cont5_box{padding: 150px 0 136px; box-sizing: border-box;}
-.cont5 .left{float: left; width: 60%; height: 600px; padding-top: 50px; background:url(../img/left_bg.jpg) no-repeat left top;}
-.cont5 .left ul{position: relative;}
-.cont5 .left li{position: absolute;}
-.cont5 .left li:nth-child(1){width: 55px; height:55px; left: 110px; top: 335px;}
-.cont5 .left li:nth-child(2){width:80px; height: 80px; left: 254px; top: 242px;}
-.cont5 .left li:nth-child(3){width: 65px; height: 65px; left: 419px; top: 350px;}
-.cont5 .left li:nth-child(4){width: 95px; height: 95px; left: 530px; top: 100px;}
-.cont5 .left li:nth-child(5){width: 55px; height: 55px; left: 660px; top: 215px;}
-.cont5 .left li a{display: block;position: absolute; background:#fff; border-radius: 50%; width: 100%; height: 100%;}
-.cont5 .left li:nth-child(1) a{background: url(../img/left01.jpg) no-repeat center; background-size:60px;}
-.cont5 .left li:nth-child(2) a{background: url(../img/left02.JPG) no-repeat center; background-size:120px;}
-.cont5 .left li:nth-child(3) a{background: url(../img/left03.JPG) no-repeat center; background-size:75px;}
-.cont5 .left li:nth-child(4) a{background: url(../img/left04.JPG) no-repeat center; background-size:110px;}
-.cont5 .left li:nth-child(5) a{background: url(../img/left05.jpg) no-repeat center; background-size:100px;}
-.cont5 .left li p{display: block; position: absolute; width: 0px; height: 80px; padding: 20px; background: #fff; border-radius: 5px; z-index: 5; font-size: 12px; transition: all 1s;}
-.cont5 .left li p span{opacity: 0; transition: all 0.5s 0.5s;}
-.cont5 .left li:nth-child(1) p{top: -135px; left: -118px;  opacity: 0;}
-.cont5 .left li:nth-child(2) p{top: -135px; left: -105px;  opacity: 0;}
-.cont5 .left li:nth-child(3) p{top: -135px; left: -116px;  opacity: 0;}
-.cont5 .left li:nth-child(4) p{top: -135px; left: -98px;  opacity: 0;}
-.cont5 .left li:nth-child(5) p{top: -135px; left: -118px;  opacity: 0;}
-.cont5 .left li p strong{display: block; border-bottom:1px solid salmon; padding-bottom: 5px; margin-bottom: 5px; text-align: center;}
-.cont5 .left li p:after {
-top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(136, 183, 213, 0); border-top-color: #fff; border-width: 10px; margin-left: -10px;}
-.cont5 .left li.show p{width: 250px; opacity: 1;}
-.cont5 .left li.show p span{opacity: 1;}
-.cont5 .right{float: left; width: 40%; height: 600px; padding-top: 100px; padding-left: 5%; box-sizing: border-box; }
-.cont5 .right h4{color:#fff; font-size: 50px; text-transform: uppercase;letter-spacing: 8px;}
-.cont5 .right h4 b{letter-spacing: 15px; font-weight: normal;}
-.cont5 .right p{color:#ddd; font-size: 15px; font-weight: 100; width: 65%; line-height: 35px;}
-.cont5 .right p.intro{padding-top: 20px;}
-.cont5 .right p.info{ padding-top: 20px;}
-.cont5 .right p.info strong{font-weight: 100; display: inline-block; cursor: pointer; transition: all 0.3s;}
-.cont5 .right p.info strong:hover{transform: scale(1.5);}
+.cont5{padding: 220px 0 250px;}
+.cont5 .likes{width: 65%; height: 450px; position: relative; background:url(../img/left_bg.jpg) no-repeat center; background-size:cover;}
+.cont5 .like{position: absolute;}
+.cont5 .like:nth-child(1){left: 10px; top: 355px;}
+.cont5 .like:nth-child(2){left: 190px; top: 230px;}
+.cont5 .like:nth-child(3){left: 350px; top: 330px;}
+.cont5 .like:nth-child(4){left: 460px; top: 100px;}
+.cont5 .like:nth-child(5){left: 580px; top: 200px;}
+.cont5 .like .like_img{border-radius: 50%; overflow: hidden;}
+.cont5 .like:nth-child(1) .like_img{width: 55px;}
+.cont5 .like:nth-child(2) .like_img{width: 75px;}
+.cont5 .like:nth-child(3) .like_img{width: 65px; height: 65px;}
+.cont5 .like:nth-child(4) .like_img{width: 90px;}
+.cont5 .like:nth-child(5) .like_img{width: 55px; height: 55px;}
+.cont5 .like .like_txt{width: 0px; height: 130px; padding: 35px; font-size: 11px; background:#fff; border-radius: 5px; margin-bottom: 10px; position: relative; position: absolute; bottom: 100%; left: -10px; opacity: 0; z-index: 0; transition: all 0.5s; overflow: hidden;}
+.cont5 .like.show .like_txt{width: 260px; height: 130px; opacity: 1; z-index: 2;}
+.cont5 .like .like_txt h5{font-size: 11px; border-bottom: 1px solid #ffe61c; text-align: center; padding-bottom: 5px;}
+.cont5 .like .like_txt p{line-height: 19px; padding-top: 20px;}
+.cont5 .like .like_txt a{display: block; padding-top: 25px; color:#c8c8c8;}
+.cont5 .like .like_txt a img{width: 10px;}
+.cont5 .like .like_txt a:hover{text-decoration: underline;}
 
 
 /*footer*/
