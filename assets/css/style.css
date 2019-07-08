@@ -113,8 +113,8 @@
 .right.show .mock{transform: translate(0,-50%); opacity: 1;}
 
 /*cont5*/
-.cont5{padding: 220px 0 250px;}
-.cont5 .likes{width: 65%; height: 450px; position: relative; background:url(../img/left_bg.jpg) no-repeat center; background-size:cover;}
+.cont5{padding: 230px 0 260px;}
+.cont5 .likes{width: 65%; height: 450px; float: left; position: relative; background:url(../img/left_bg.jpg) no-repeat center; background-size:cover;}
 .cont5 .like{position: absolute;}
 .cont5 .like:nth-child(1){left: 10px; top: 355px;}
 .cont5 .like:nth-child(2){left: 190px; top: 230px;}
@@ -130,10 +130,18 @@
 .cont5 .like .like_txt{width: 0px; height: 130px; padding: 35px; font-size: 11px; background:#fff; border-radius: 5px; margin-bottom: 10px; position: relative; position: absolute; bottom: 100%; left: -10px; opacity: 0; z-index: 0; transition: all 0.5s; overflow: hidden;}
 .cont5 .like.show .like_txt{width: 260px; height: 130px; opacity: 1; z-index: 2;}
 .cont5 .like .like_txt h5{font-size: 11px; border-bottom: 1px solid #ffe61c; text-align: center; padding-bottom: 5px;}
-.cont5 .like .like_txt p{line-height: 19px; padding-top: 20px;}
-.cont5 .like .like_txt a{display: block; padding-top: 25px; color:#c8c8c8;}
+.cont5 .like .like_txt p{line-height: 19px; padding-top: 15px;}
+.cont5 .like .like_txt a{display: block; padding-top: 20px; color:#c8c8c8;}
 .cont5 .like .like_txt a img{width: 10px;}
 .cont5 .like .like_txt a:hover{text-decoration: underline;}
+.cont5 .info{width: 35%; float: right;}
+.cont5 .info h4{color: #fff; font-size: 50px; text-transform: uppercase; font-weight: 500; letter-spacing: 8px;}
+.cont5 .info p{width: 60%; color:#fff; font-size: 14px; font-weight: 100;}
+.cont5 .info p.intro{padding-top: 50px;}
+.cont5 .info p.call{padding-top: 20px; padding-bottom: 60px;}
+.cont5 .info p.call span{display: block;}
+.cont5 .info p.call span em{display: inline-block; width: 20%; text-transform: uppercase;}
+.cont5 .info a.resume{}
 
 
 /*footer*/
