@@ -115,12 +115,12 @@
 /*cont5*/
 .cont5{padding: 230px 0 260px;}
 .cont5 .likes{width: 65%; height: 450px; float: left; position: relative; background:url(../img/left_bg.jpg) no-repeat center; background-size:cover;}
-.cont5 .like{position: absolute;}
-.cont5 .like:nth-child(1){left: 10px; top: 355px;}
-.cont5 .like:nth-child(2){left: 190px; top: 230px;}
-.cont5 .like:nth-child(3){left: 350px; top: 330px;}
-.cont5 .like:nth-child(4){left: 460px; top: 100px;}
-.cont5 .like:nth-child(5){left: 580px; top: 200px;}
+.cont5 .like{position: absolute; opacity: 0; transform: translateY(30%); transition: all 1s;}
+.cont5 .like:nth-child(1){left:1.156%; top: 355px; transition-delay: 0.2s;}
+.cont5 .like:nth-child(2){left: 21.965%; top: 230px; transition-delay: 0.4s;}
+.cont5 .like:nth-child(3){left: 40.462%; top: 330px; transition-delay: 0.6s;}
+.cont5 .like:nth-child(4){left: 53.179%; top: 100px; transition-delay: 0.8s;}
+.cont5 .like:nth-child(5){left: 67.052%; top: 200px; transition-delay: 1s;}
 .cont5 .like .like_img{border-radius: 50%; overflow: hidden;}
 .cont5 .like:nth-child(1) .like_img{width: 55px;}
 .cont5 .like:nth-child(2) .like_img{width: 75px;}
@@ -135,13 +135,20 @@
 .cont5 .like .like_txt a img{width: 10px;}
 .cont5 .like .like_txt a:hover{text-decoration: underline;}
 .cont5 .info{width: 35%; float: right;}
-.cont5 .info h4{color: #fff; font-size: 50px; text-transform: uppercase; font-weight: 500; letter-spacing: 8px;}
+.cont5 .info h4{font-family: 'Anton';color: #fff; font-size: 50px; text-transform: uppercase; font-weight: 500; letter-spacing: 8px; opacity: 0; transform: translateX(40%); transition: all 1s ease-in-out;}
+.cont5 .info h4 em{display: block;}
 .cont5 .info p{width: 60%; color:#fff; font-size: 14px; font-weight: 100;}
-.cont5 .info p.intro{padding-top: 50px;}
-.cont5 .info p.call{padding-top: 20px; padding-bottom: 60px;}
+.cont5 .info p.intro{padding-top: 40px; opacity: 0; transform: translateX(40%); transition: all 1.4s ease-in-out;}
+.cont5 .info p.call{padding-top: 20px; padding-bottom: 60px; opacity: 0; transform: translateX(40%); transition: all 1.6s ease-in-out;}
 .cont5 .info p.call span{display: block;}
 .cont5 .info p.call span em{display: inline-block; width: 20%; text-transform: uppercase;}
-.cont5 .info a.resume{}
+.cont5 .info a.resume{ opacity: 0; transition: all 2s ease-in-out;}
+
+.cont5.show .like{opacity: 1; transform: none;}
+.cont5.show .info h4{opacity: 1; transform: none;}
+.cont5.show .info p.intro{opacity: 1; transform: none;}
+.cont5.show .info p.call{opacity: 1; transform: none;}
+.cont5.show .info a.resume{opacity: 1; transform: none;}
 
 
 /*footer*/
@@ -252,12 +259,25 @@ transition-delay: 0.15s;
   .cont2 .skill li{margin-bottom: 70px;}
   .cont2 .skill li span{bottom: -40px;}
 
-  .line{bottom: 80px;}
 
   .port_box .text h3{font-size: 50px;}
   .port2 .port_box .text{width:auto;}
 }
+@media (max-width:1100px){
+  .cont5{padding: 50px 0 150px;}
+  .cont5 .likes{float: none; width: 100%; margin: 0 auto;}
+  .cont5 .like:nth-child(1){left:10.156%;}
+  .cont5 .like:nth-child(2){left: 31.965%;}
+  .cont5 .like:nth-child(3){left: 50.462%;}
+  .cont5 .like:nth-child(4){left: 63.179%;}
+  .cont5 .like:nth-child(5){left: 77.052%;}
+  .cont5 .info{float: none; width: 100%; text-align: center; padding-top: 50px;}
+  .cont5 .info h4 em{display: inline;}
+  .cont5 .info p{width: 100%;}
+  .cont5 .info p.call{width: 258px; text-align: left; margin: 0 auto;}
+  .cont5 .info a.resume{margin: 0 auto;}
 
+}
 @media (max-width:960px){
   .cont2 .text h2{font-size: 50px;}
   .cont2 .text p{font-size: 18px;}
@@ -275,6 +295,9 @@ transition-delay: 0.15s;
   .right .port_box .text{margin-left: 0; width: 80%;}
   .port_box .text .btn {margin: 0 auto; margin-top: 20px;}
 
+  .cont5 .info h4{font-size: 40px;}
+
+
 }
 
 @media (max-width: 768px){
@@ -287,6 +310,9 @@ transition-delay: 0.15s;
   .port_box .text h3{font-size: 25px;}
   .port_box .text .btn2{width: 150px; height: 40px;}
 
+  .cont5 .like:nth-child(5){left: 85%;}
+  .cont5 .info h4{font-size: 25px;}
+
   .footer h2{width: 50px; height: 50px; top: -20px;}
   .footer h2 span{width: 40px; height: 27px;}
   .footer .text{width: 100%; padding-top: 50px;}
@@ -298,13 +324,11 @@ transition-delay: 0.15s;
   .footer .contact a.sns{margin: 0 auto;}
   .footer .contact a.sns:after{top: 13px;}
 
-  .line{bottom: 50px;}
 
 }
 
 @media (max-width: 600px){
     
-  .line span{padding-right: 100px;}
 
   .cont1 .text h2 {font-size: 40px; font-weight: bold;}
   .cont1 .text p{font-size: 14px;}

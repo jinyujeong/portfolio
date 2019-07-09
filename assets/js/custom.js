@@ -87,6 +87,11 @@ imagesProgress();
             $('#navi').find('.nav__trigger').removeClass('show');   
         }
 
+        if(wScroll>=$('#cont5').offset().top-$(window).height()/3){
+            $('.cont5').addClass('show');
+        }else{
+            $('.cont5').removeClass('show');
+        }
         
 
         //portfolio-animation
