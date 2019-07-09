@@ -16,7 +16,7 @@
 #cont1:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(4,10,180,0.41); }
 #cont2{background:#fff; height: 100%;}
 #cont3{width: 100%;}
-#cont4{width: 100%; height: 100%; background:#aaa;}
+#cont4{width: 100%; height: 100%; background:#fff;}
 #cont5{width: 100%; height: 100%; background:#2041f8;}
 #footer{width: 100%; background-repeat: repeat; background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 90%, transparent 90%), linear-gradient(to right, #eee, #eee 20%, #fff 20%, #fff 90%, #eee 90%);
     background-size: 10px 10px; background-attachment: fixed; border-top:1px solid #eee;}
@@ -111,6 +111,14 @@
 .right.show .btn{transform: translate(0,0); opacity: 1;}
 .port.show .mock{transform: translate(0,-50%); opacity: 1;}
 .right.show .mock{transform: translate(0,-50%); opacity: 1;}
+
+/*cont4*/
+.cont4{padding:150px 0 300px;}
+.cont4 div{width: 700px; height: 700px; border-radius: 50%; background:#aaa;}
+.cont4 div:nth-child(1){float: left;}
+.cont4 div:nth-child(2){float: right; margin-top:-100px;}
+.cont4 div:nth-child(3){float: left; margin-top:-100px;}
+.cont4 div:nth-child(4){float: right; margin-top:-100px;}
 
 /*cont5*/
 .cont5{padding: 230px 0 260px;}
