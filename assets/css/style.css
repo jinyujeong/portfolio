@@ -113,7 +113,9 @@
 .right.show .mock{transform: translate(0,-50%); opacity: 1;}
 
 /*cont4*/
-.cont4{padding:150px 0 300px;}
+.cont4{padding:100px 0 300px;}
+.cont4 h2{text-align: center;font-family: 'Anton'; font-size: 66px; text-transform: uppercase;}
+.cont4 p{text-align: center;font-family: 'Titillium Web'; font-size: 23px; color:#666; padding-top: 20px; padding-bottom: 100px;}
 .cont4>div{width: 700px; height: 700px; border-radius: 50%; position: relative; overflow: hidden;}
 .cont4 div.cont41{}
 .cont4 div.cont42{margin-top:-100px; margin-left: 50%;}
