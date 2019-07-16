@@ -217,8 +217,7 @@ body.active .cont1 .text .btn  {opacity: 1;}
 .cont5 .like:nth-child(3) .like_img{width: 65px; height: 65px;}
 .cont5 .like:nth-child(4) .like_img{width: 90px;}
 .cont5 .like:nth-child(5) .like_img{width: 55px; height: 55px;}
-.cont5 .like .like_txt{width: 0px; height: 130px; padding: 35px; font-size: 11px; background:#fff; border-radius: 5px; margin-bottom: 10px; position: relative; position: absolute; bottom: 100%; left: -10px; overflow: hidden;}
-.cont5 .like.show .like_txt{width: 260px; height: 130px; opacity: 1; z-index: 2;}
+.cont5 .like .like_txt{width: 0px; height: 130px; padding: 35px; font-size: 11px; background:#fff; border-radius: 5px; box-shadow:3px 3px 5px rgba(0,0,0,0.2); margin-bottom: 10px; position: relative; position: absolute; bottom: 100%; left: -10px; overflow: hidden;}
 .cont5 .like .like_txt h5{font-size: 13px; padding-bottom: 5px;}
 .cont5 .like .like_txt h5 i{color:#ff1c1c;}
 .cont5 .like .like_txt p{line-height: 19px; padding-top: 7px;}
@@ -251,6 +250,7 @@ body.active .cont1 .text .btn  {opacity: 1;}
 .cont5 .like:nth-child(4){transition-delay: 0.8s;}
 .cont5 .like:nth-child(5){transition-delay: 1s;}
 .cont5 .like .like_txt{opacity: 0; z-index: 0; transition: all 0.5s;}
+.cont5 .like.show .like_txt{width: 260px; height: 130px; opacity: 1; z-index: 2;}
 .cont5 .like .like_txt h5{opacity:0;}
 .cont5 .like .like_txt p{opacity:0;}
 .cont5 .like .like_txt a{opacity:0;}
