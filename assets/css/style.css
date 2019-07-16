@@ -231,7 +231,7 @@ body.active .cont1 .text .btn  {opacity: 1;}
 
 #fs-frm{width:100%;}
 #fs-frm label{display: none;}
-#fs-frm input, #fs-frm textarea{display:block; width: 100%; margin: 20px 0 0 0; position: relative; right: 0; bottom: 0;padding:10px; cursor:text; border-radius: 5px; border:none;}
+#fs-frm input, #fs-frm textarea{display:block; width: 100%; margin: 20px 0 0 0; position: relative; right: 0; bottom: 0;padding:10px; cursor:text; border-radius: 3px; border:none;}
 #fs-frm input.submit{width:150px; margin-top: 20px; padding: 10px 20px; cursor:pointer; background:#fff;}
 
 
@@ -263,9 +263,9 @@ body.active .cont1 .text .btn  {opacity: 1;}
 
 .cont5.show .like{opacity: 1; transform: none;}
 .cont5.show .info h4{opacity: 1; transform: none;}
-.cont5.show .info p.intro{opacity: 1; transform: none;}
-.cont5.show .info p.call{opacity: 1; transform: none;}
-.cont5.show .info a.resume{opacity: 1; transform: none;}
+
+#fs-frm{opacity: 0; transform:translateX(40%); transition:all 0.5s 1.6s ease-in-out;}
+.cont5.show #fs-frm{opacity: 1; transform:none;}
 
 
 
