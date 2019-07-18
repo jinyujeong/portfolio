@@ -85,10 +85,10 @@ body.active .cont1 .text .btn  {opacity: 1;}
 /*cont2*/
 .cont2{position: relative; height: 100%; padding: 150px 0 200px;}
 .cont2 .text {text-align: center; width: 100%;}
-.cont2 .text h2 {font-family: 'Anton'; font-size: 66px; font-weight: 500; margin-bottom: 3%; height: 80px; overflow: hidden;}
+.cont2 .text h2 {font-family: 'Anton'; font-size: 66px; font-weight: 500; margin-bottom: 5%; height: 80px; overflow: hidden;}
 .cont2 .text h2 span {display: inline-block;}
 .cont2 .text p {font-family: 'Titillium Web'; font-size: 23px; color:#666; width: 60%; margin: 0 auto; font-weight: 100;}
-.cont2 .skill {padding-top: 5%;}
+.cont2 .skill {padding-top: 7%;}
 .cont2 .skill li {width: 20%; float: left; position: relative;}
 .cont2 .skill li .count{position: absolute; left: 50%; top: 48%; transform: translate(-50%,-50%); font-size: 50px; font-weight: 100; font-family: 'Titillium Web';}
 .cont2 .skill li .count:after{content:"%";}
