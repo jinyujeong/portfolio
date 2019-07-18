@@ -294,9 +294,9 @@ var stars=800;
     var $this1 = $('.cont5 .like')
     
     //cont5
-    $this1.mouseenter(function(){
-        $(this).addClass('show');
-        $(this).find('h5,p,a').css({'opacity':'1','transition-duration':'1s','transition-delay':'0.7s'});
+    $this1.find('.like_img').mouseenter(function(){
+        $(this).parent().addClass('show');
+        $(this).parent().find('h5,p,a').css({'opacity':'1','transition-duration':'1s','transition-delay':'0.7s'});
     })
     $this1.mouseleave(function(){
         $(this).removeClass('show');

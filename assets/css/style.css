@@ -105,9 +105,9 @@ body.active .cont1 .text .btn  {opacity: 1;}
 .cont2 .text h2 span:nth-child(8)  {opacity: 0; transform: translateY(40px); transition: all 0.33s 0.8s ease-in-out;}
 .cont2 .text h2 span:nth-child(9)  {opacity: 0; transform: translateY(40px); transition: all 0.33s 0.9s ease-in-out;}
 .cont2 .text h2 span:nth-child(10) {opacity: 0; transform: translateY(40px); transition: all 0.33s 1.10s ease-in-out;}
-.cont2 .text h2 span:nth-child(11) {opacity: 0; transform: translateY(40px); transition: all 0.33s 1.11s ease-in-out;}
-.cont2 .text h2 span:nth-child(12) {opacity: 0; transform: translateY(40px); transition: all 0.33s 1.12s ease-in-out;}
-.cont2 .text h2 span:nth-child(13) {opacity: 0; transform: translateY(40px); transition: all 0.33s 1.13s ease-in-out;}
+.cont2 .text h2 span:nth-child(11) {opacity: 0; transform: translateY(40px); transition: all 0.33s 1.12s ease-in-out;}
+.cont2 .text h2 span:nth-child(12) {opacity: 0; transform: translateY(40px); transition: all 0.33s 1.14s ease-in-out;}
+.cont2 .text h2 span:nth-child(13) {opacity: 0; transform: translateY(40px); transition: all 0.33s 1.15s ease-in-out;}
 
 .cont2.show .text h2 span:nth-child(1) {opacity: 1; transform: none;}
 .cont2.show .text h2 span:nth-child(2) {opacity: 1; transform: none;}
@@ -151,12 +151,12 @@ body.active .cont1 .text .btn  {opacity: 1;}
 .port_box{height: 100vh;position: relative; z-index: 2;}
 .port_box .text{position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 40%;}
 .right .port_box .text{margin-left: 67%;}
-.port_box .text p.st{font-size: 14px; color:#3AC5CA; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; position: relative;}
+.port_box .text p.st{font-size: 14px; color:#3AC5CA; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; position: relative; margin-bottom: 40px;}
 .port_box .text p.st:after{content:""; width: 40px; height:2px; background:#3AC5CA; position: absolute; top: -10px; left: 0;}
 .port_box .text h3{margin-bottom: 5%; font-family: 'Anton'; font-size: 60px; text-transform: uppercase; }
-.port_box .text p{width: 80%; color:#666; font-size: 16px; line-height: 25px; padding-bottom: 1.2%;}
-.port_box .text p span{text-decoration: underline;}
-.port_box .text .btn{position: relative; display: block; margin-top: 50px; width: 200px;}
+.port_box .text p.ctxt{width:80%;}
+.port_box .text p.ctxt>span{width:auto; display:inline-block; font-size: 14px; color:#999; border:1px solid #999; padding:5px 10px; text-align:center; margin-top: 5px; text-transform: uppercase; border-radius: 3px;}
+.port_box .text .btn{position: relative; display: block; margin-top: 80px; width: 200px;}
 
 .port .mock{position: absolute; right: 100px; top: 50%; transform: translateY(-50%); width: 50%;}
 .port4 .mock{}
@@ -168,7 +168,7 @@ body.active .cont1 .text .btn  {opacity: 1;}
 /*cont3 animation*/
 .port_box .text p.st{opacity: 0;transition:all 1s ease-in-out;}
 .port_box .text h3{opacity: 0;transform: translateX(20%); transition:all 1s 0.2s ease-in-out;}
-.port_box .text p{opacity: 0;transition:all 1.5s  0.4s ease-in-out;}
+.port_box .text p.ctxt{opacity: 0;transform: translateX(20%);transition:all 1.5s  0.4s ease-in-out;}
 .port_box .text .btn{transform: translate(-20%,0); opacity: 0;transition:all 1s 0.5s ease-in-out;}
 .right .text .btn{ transform: translate(20%,0); opacity: 0;transition:all 1s 0.5s ease-in-out;}
 .port .mock{opacity: 0;transition:all 1.5s 0.8s ease-in-out; transform: translate(10%,-50%);}
@@ -176,7 +176,7 @@ body.active .cont1 .text .btn  {opacity: 1;}
 
 .port.show .port_box .text h3{transform: none;opacity: 1; }
 .port.show .port_box .text p.st{transform: none;opacity: 1; animation:fadeInDown 1s;}
-.port.show .port_box .text p{transform: none;opacity: 1;}
+.port.show .port_box .text p.ctxt{transform: none;opacity: 1;}
 .port.show .port_box .btn{transform: translate(0,0); opacity: 1;}
 .right.show .btn{transform: translate(0,0); opacity: 1;}
 .port.show .mock{transform: translate(0,-50%); opacity: 1;}
@@ -211,13 +211,19 @@ body.active .cont1 .text .btn  {opacity: 1;}
 .cont5 .like:nth-child(3){left: 40.462%; top: 330px;}
 .cont5 .like:nth-child(4){left: 53.179%; top: 100px;}
 .cont5 .like:nth-child(5){left: 67.052%; top: 200px;}
-.cont5 .like .like_img{border-radius: 50%; overflow: hidden;}
+.cont5 .like .like_img{border-radius: 50%; overflow: hidden;;}
 .cont5 .like:nth-child(1) .like_img{width: 55px;}
 .cont5 .like:nth-child(2) .like_img{width: 75px;}
 .cont5 .like:nth-child(3) .like_img{width: 65px; height: 65px;}
 .cont5 .like:nth-child(4) .like_img{width: 90px;}
 .cont5 .like:nth-child(5) .like_img{width: 55px; height: 55px;}
-.cont5 .like .like_txt{width: 0px; height: 130px; padding: 35px; font-size: 11px; background:#fff; border-radius: 5px; box-shadow:3px 3px 5px rgba(0,0,0,0.2); margin-bottom: 10px; position: relative; position: absolute; bottom: 100%; left: -10px; overflow: hidden;}
+.cont5 .like .like_txt{width: 0px; height: 130px; padding: 35px; font-size: 11px; background:#fff; border-radius: 5px; box-shadow:3px 3px 5px rgba(0,0,0,0.2); margin-bottom: 10px; position: relative; position: absolute; bottom: 100%; left: -10px;}
+.cont5 .like .like_txt:after{content:""; display:block; position: absolute; top:100%; width: 0; height: 0; border-left: 10px solid transparent;border-right: 10px solid transparent; border-top: 10px solid #fff;}
+.cont5 .like:nth-child(1) .like_txt:after{left: 30px;}
+.cont5 .like:nth-child(2) .like_txt:after{left: 40px;}
+.cont5 .like:nth-child(3) .like_txt:after{left: 32px;}
+.cont5 .like:nth-child(4) .like_txt:after{left: 45px;}
+.cont5 .like:nth-child(5) .like_txt:after{left: 27px;}
 .cont5 .like .like_txt h5{font-size: 13px; padding-bottom: 5px;}
 .cont5 .like .like_txt h5 i{color:#ff1c1c;}
 .cont5 .like .like_txt p{line-height: 19px; padding-top: 7px;}
@@ -230,17 +236,8 @@ body.active .cont1 .text .btn  {opacity: 1;}
 
 #fs-frm{width:100%;}
 #fs-frm label{display: none;}
-#fs-frm input, #fs-frm textarea{display:block; width: 100%; margin: 20px 0 0 0; position: relative; right: 0; bottom: 0;padding:10px; cursor:text; border-radius: 3px; border:none;}
+#fs-frm input, #fs-frm textarea{display:block; width: 100%; margin: 20px 0 0 0; position: relative; right: 0; bottom: 0;padding:10px; cursor:text; border-radius: 3px; border:none; box-sizing:border-box;}
 #fs-frm input.submit{width:150px; margin-top: 20px; padding: 10px 20px; cursor:pointer; background:#fff;}
-
-
-/*
-.cont5 .info p{width: 60%; color:#fff; font-size: 14px; font-weight: 100;}
-.cont5 .info p.intro{padding-top: 40px;}
-.cont5 .info p.call{padding-top: 20px; padding-bottom: 60px; opacity: 0; transform: translateX(40%); transition: all 1.6s ease-in-out;}
-.cont5 .info p.call span{display: block;}
-.cont5 .info p.call span em{display: inline-block; width: 20%; text-transform: uppercase;}
-*/
 
 /*cont5 animation*/
 .cont5 .like{opacity: 0; transform: translateY(30%); transition: all 1s;}
@@ -251,6 +248,8 @@ body.active .cont1 .text .btn  {opacity: 1;}
 .cont5 .like:nth-child(5){transition-delay: 1s;}
 .cont5 .like .like_txt{opacity: 0; z-index: 0; transition: all 0.5s;}
 .cont5 .like.show .like_txt{width: 260px; height: 130px; opacity: 1; z-index: 2;}
+.cont5 .like .like_txt:after{opacity:0; transition:all 0.3s 0.5s;}
+.cont5 .like.show .like_txt:after{opacity:1;}
 .cont5 .like .like_txt h5{opacity:0;}
 .cont5 .like .like_txt p{opacity:0;}
 .cont5 .like .like_txt a{opacity:0;}
@@ -365,6 +364,12 @@ transition-delay: 0.15s;
   .cont4 div.cont42{margin-left: 45%;}
   .cont4 div.cont43{margin-right: 45%;}
   .cont4 div.cont44{margin-left: 45%;}
+
+  .cont5 .like:nth-child(4) .like_txt{top:106%; left:-200px;}
+  .cont5 .like:nth-child(5) .like_txt{left:-280px;}
+  .cont5 .like:nth-child(4) .like_txt:after{top: -20px;left: 233px;border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;}
+  .cont5 .like:nth-child(5) .like_txt:after{left:295px;}
 }
 @media (max-width:1100px){
   .cont5{padding: 50px 0 150px;}
@@ -379,6 +384,8 @@ transition-delay: 0.15s;
   .cont5 .info p{width: 100%;}
   .cont5 .info p.call{width: 258px; text-align: left; margin: 0 auto;}
   .cont5 .info a.resume{margin: 0 auto;}
+  #fs-frm input.submit{margin:0 auto; margin-top: 20px;}
+
 
 }
 @media (max-width:960px){
@@ -393,7 +400,7 @@ transition-delay: 0.15s;
   .port .mock{top: 15%; left:50%; transform: translateX(-30%);}
   .port_box .text{left: 50%; transform: translateX(-50%); top: 50%; text-align: center; width: 80%;}
   .port_box .text p{margin: 0 auto;}
-  .port_box .text p.st{width: auto; display: inline-block;}
+  .port_box .text p.st{width: auto; display: inline-block; margin-bottom:20px;}
   .port.show .mock{transform: translate(-50%,0); }
   .right .port_box .text{margin-left: 0; width: 80%;}
   .port_box .text .btn {margin: 0 auto; margin-top: 20px;}
@@ -424,16 +431,7 @@ transition-delay: 0.15s;
   .cont5 .like:nth-child(5){left: 85%;}
   .cont5 .info h4{font-size: 25px;}
 
-  .footer h2{width: 50px; height: 50px; top: -20px;}
-  .footer h2 span{width: 40px; height: 27px;}
-  .footer .text{width: 100%; padding-top: 50px;}
-  .footer .contact{padding: 20px 0 0 0; width: 100%;}
-  .footer .contact p{text-align: center;}
-  .footer .contact p:nth-child(1),.footer .contact p:nth-child(2){padding-bottom: 20px;}
-  .footer .contact em{font-size: 16px;}
-  .footer .contact span{padding-top: 10px;}
-  .footer .contact a.sns{margin: 0 auto;}
-  .footer .contact a.sns:after{top: 13px;}
+
 
 
 }
@@ -452,12 +450,20 @@ transition-delay: 0.15s;
   
 
   .port .mock{width: 80%;}
-  .port4 .mock{width: 60%;}
+  .port4 .mock{width: 80%;}
   .port6 .mock{width: 50%;}
-  .port_box .text h3{font-size: 20px;}
   .port_box .text{width: 100%;}
-  .port_box .text p{display: none;}
+  .right .port_box .text{width:100%;}
+  .port_box .text h3{font-size: 20px;}
+  .port_box .text p.ctxt{width:100%;}
+  .port_box .text p.ctxt>span{font-size:11px;}
 
   .cont4 .ani{width: 400px; height: 400px;}
+
+  .cont5 .like .like_txt:nth-child(1){}
+  .cont5 .like:nth-child(2) .like_txt{left:-110px;}
+  .cont5 .like:nth-child(3) .like_txt{left:-150px;}
+  .cont5 .like:nth-child(2) .like_txt:after{left: 140px;}
+  .cont5 .like:nth-child(3) .like_txt:after{left: 172px;}
 }
 

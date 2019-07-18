@@ -182,7 +182,7 @@
   
   
   @media(max-width:960px){
-    .nav__trigger{right: 20px; top: 1rem;}
+    .nav__trigger{right: 20px; top: 2rem;}
     .nav__trigger .bars, .nav__trigger .bars:before, .nav__trigger .bars:after{height: 3px;}
     .nav__trigger .bars:before{transform: translateY(-6px);}
     .nav__trigger .bars:after{transform: translateY(6px);}
