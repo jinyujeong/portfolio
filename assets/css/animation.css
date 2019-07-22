@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.cont4>div {
+.cont4 div {
     box-sizing: border-box;
   }
 
@@ -996,7 +996,7 @@
 
 
 /*cont43*/
-.cont43 {
+.cont43 .ani {
   margin: 0;
   height: 100%;
   display: grid;
@@ -1113,11 +1113,11 @@
 
   
 /*cont44*/
-.cont44 {
+.cont44 .ani {
   background-color: #111;
   overflow: hidden;
 }
-.cont44:after {
+.cont44 .ani:after {
   background: radial-gradient(transparent, #111);
   bottom: 0;
   content: '';

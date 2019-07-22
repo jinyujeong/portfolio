@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     //imageProgress
 function imagesProgress(){
 	var $container = $("#progress"),
@@ -37,6 +38,48 @@ function imagesProgress(){
 }
 imagesProgress();
 
+
+/* cursor */
+var cursor = $(".cursor"),
+		follower = $(".cursor-follower"),
+    posX = 0,	//좌표값
+		posY = 0,
+    mouseX = 0, //마우스값
+		mouseY = 0;
+
+$(document).on("mousemove",function(e){
+	mouseX = e.pageX;
+	mouseY = e.pageY;
+});
+
+TweenMax.to({}, 0.016, {
+	repeat: -1,
+	onRepeat: function(){
+		posX += (mouseX - posX) / 9;
+		posY += (mouseY - posY) / 9;
+		
+		TweenMax.set(follower, {
+			css: {
+				left: posX - 20,
+				top: posY - 20
+			}
+		});
+		TweenMax.set(cursor, {
+			css: {
+				left: mouseX,
+				top: mouseY
+			}
+		});
+	}
+});
+
+$("#cont1 h2,#cont1 p,#cont2 h2,#cont2 p,#cont3 h3,#cont4 h2,#cont4 h4,#cont4 p,.info h4").on('mouseenter', function() {
+	cursor.addClass("active");
+})
+$("#cont1 h2,#cont1 p,#cont2 h2,#cont2 p,#cont3 h3,#cont4 h2,#cont4 h4,#cont4 p,.info h4").on("mouseleave",function(){
+	cursor.removeClass("active");
+});
+
 /* cont1 animation */
 var stars=800;
   var $stars=$(".stars");
@@ -62,7 +105,7 @@ var stars=800;
     var count = $('#cont2');
     var cont2 = $('.cont2');
     var cont = $("#cont3 > div.port");
-    var cont4 = $('.cont4 > div.ani');
+    var cont4 = $('.cont4 div.ani');
     var foot = $('.footer h2');
 
     $(window).scroll(function(){
@@ -111,18 +154,22 @@ var stars=800;
         if(wScroll>=$('.cont4').offset().top-$(window).height()){
             $('.cont4').addClass('show');
         }
-        if(wScroll>=cont4.eq(0).offset().top-$(window).height()){
+        if(wScroll>=cont4.eq(0).offset().top-$(window).height()/3){
             cont4.eq(0).addClass('show');
+            cont4.parent().find('.ani_txt').eq(0).addClass('show');
         }
-        if(wScroll>=cont4.eq(1).offset().top-$(window).height()){
+        
+        if(wScroll>=cont4.eq(1).offset().top-$(window).height()/3){
             cont4.eq(1).addClass('show');
-
+            cont4.parent().find('.ani_txt').eq(1).addClass('show');
         }
-        if(wScroll>=cont4.eq(2).offset().top-$(window).height()){
+        if(wScroll>=cont4.eq(2).offset().top-$(window).height()/3){
             cont4.eq(2).addClass('show');
+            cont4.parent().find('.ani_txt').eq(2).addClass('show');
         }
-        if(wScroll>=cont4.eq(3).offset().top-$(window).height()){
+        if(wScroll>=cont4.eq(3).offset().top-$(window).height()/3){
             cont4.eq(3).addClass('show');
+            cont4.parent().find('.ani_txt').eq(3).addClass('show');
         }
 
         if(wScroll>=$('#cont5').offset().top-$(window).height()/3){
@@ -303,6 +350,5 @@ var stars=800;
         $(this).find('h5,p,a').css({'opacity':'0','transition-duration':'0s','transition-delay':'0s'});
     })
 
-    
 
 });
