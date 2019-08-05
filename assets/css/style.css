@@ -249,8 +249,8 @@ body.active .cont1 .text .btn  {opacity: 1;}
 .cont4.show h2{opacity: 1; transform: none;}
 .cont4>p{transform: translateY(40%); opacity: 0; transition:all 1s;}
 .cont4.show>p{opacity: 1; transform: none;}
-.cont4 .left .ani{transform: translateX(-40%); opacity: 0; transition:all 1s;}
-.cont4 .right .ani{transform: translateX(40%); opacity: 0; transition:all 1s;}
+.cont4 .left .ani{transform: translateX(-40%) rotate(-189deg); opacity: 0; transition:all 1s;}
+.cont4 .right .ani{transform: translateX(40%) rotate(189deg); opacity: 0; transition:all 1s;}
 .cont4 .ani.show{transform: none; opacity: 1;}
 .cont4 .left .ani_txt h4{opacity:0; transform:translateX(-40%); transition:all 0.5s 1s;}
 .cont4 .right .ani_txt h4{opacity:0; transform:translateX(40%); transition:all 0.5s 1s;}
