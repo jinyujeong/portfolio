@@ -73,10 +73,10 @@ TweenMax.to({}, 0.016, {
 	}
 });
 
-$("#cont1 h2,#cont1 p,#cont2 h2,#cont2 p,#cont3 h3,#cont4 h2,#cont4 h4,#cont4 p,.info h4").on('mouseenter', function() {
+$("#cont1 h2").on('mouseenter', function() {
 	cursor.addClass("active");
 })
-$("#cont1 h2,#cont1 p,#cont2 h2,#cont2 p,#cont3 h3,#cont4 h2,#cont4 h4,#cont4 p,.info h4").on("mouseleave",function(){
+$("#cont1 h2").on("mouseleave",function(){
 	cursor.removeClass("active");
 });
 
@@ -151,7 +151,8 @@ var stars=800;
             $('#navi').find('.nav__trigger').removeClass('show').css({'transition-delay':'0s'});
         }
 
-        if(wScroll>=$('.cont4').offset().top-$(window).height()){
+        
+        if(wScroll>=$('.cont4').offset().top-$(window).height()/3){
             $('.cont4').addClass('show');
         }
         if(wScroll>=cont4.eq(0).offset().top-$(window).height()/3){
@@ -171,11 +172,11 @@ var stars=800;
             cont4.eq(3).addClass('show');
             cont4.parent().find('.ani_txt').eq(3).addClass('show');
         }
-
+ 
         if(wScroll>=$('#cont5').offset().top-$(window).height()/3){
             $('.cont5').addClass('show');
         }
-        
+       
 
         //portfolio-animation
         if(wScroll>=main.offset().top){
