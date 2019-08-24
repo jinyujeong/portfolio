@@ -4,6 +4,8 @@
     box-sizing: border-box;
   }
 
+.cont4 .ani{overflow: hidden;}
+
 /*cont41*/
 .scene, .rubik, .face, .squares {
   display: flex;
@@ -1196,26 +1198,6 @@
 	animation: ekg 1.5s linear forwards infinite;
 }
 
-.intro-block h1,
-.intro-block h3,
-.intro-block p {
-  background-color: #0b0e13;
-  width: 450px;
-  margin: 0 auto;
-  padding-top: 10px;
-  border-left: 2px solid #0f3a4d;
-  border-right: 2px solid #0f3a4d;
-	text-shadow:  1px  1px 1px #0f3a4d,
-	              1px -1px 1px #0f3a4d,
-	             -1px  1px 1px #0f3a4d,
-	             -1px -1px 1px #0f3a4d;
-}
-
-.intro-block p {
-  border-radius: 0 0 20px 20px;
-  border-bottom: 2px solid #0f3a4d;
-  padding-bottom: 20px;
-}
 
 @keyframes ekg {
     0% {
