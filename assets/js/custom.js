@@ -40,7 +40,7 @@ imagesProgress();
 
 
 /* cursor */
-var cursor = $(".cursor"),
+/*var cursor = $(".cursor"),
 		follower = $(".cursor-follower"),
     posX = 0,	//좌표값
 		posY = 0,
@@ -79,11 +79,35 @@ $("#cont1 h2").on('mouseenter', function() {
 $("#cont1 h2").on("mouseleave",function(){
 	cursor.removeClass("active");
 });
+*/
+
+  //navi
+  var navBtn=$('.nav__trigger');
+  var nav=$('.nav');
+  var navCont=$('nav__content');
+  var list=$('.nav__list');
+
+  navBtn.on('click',function(e){
+    e.preventDefault();
+    $(this).toggleClass('active');
+    nav.toggleClass('active');
+  });
+  if(navBtn.hasClass('active')){
+    navBtn.on('click',function(){
+        navCont.css({'animation-delay':'0.5s','transition-delay':'0.5s','opacity':'0'});
+        list.css({'transition-delay':'0s','opacity':'0'});
+    });
+  }
+  list.find('.nav__item').on('click',function(){
+      nav.removeClass('active');
+      navBtn.removeClass('active');
+  });
+  
 
 /* cont1 animation */
-var stars=800;
+var stars=300;
   var $stars=$(".stars");
-  var r=800;
+  var r=300;
   for(var i=0;i<stars;i++){
     var $star=$("<div/>").addClass("star");
     $stars.append($star);
@@ -100,7 +124,7 @@ var stars=800;
   })
 
 
-    //animation
+    //scroll animation
     var main = $('.cont1');
     var count = $('#cont2');
     var cont2 = $('.cont2');
@@ -144,14 +168,13 @@ var stars=800;
             $('#navi').find('svg').css('fill','#fff'); 
         }
         
-
         if(wScroll>=$('#cont2').offset().top&&wScroll<=$('#cont5').offset().top){
             $('#navi').find('.nav__trigger').addClass('show').css({'transition-delay':'0s'});
         }else{
             $('#navi').find('.nav__trigger').removeClass('show').css({'transition-delay':'0s'});
         }
 
-        
+        //contents
         if(wScroll>=$('.cont4').offset().top-$(window).height()/3){
             $('.cont4').addClass('show');
         }
@@ -211,79 +234,7 @@ var stars=800;
         //    foot.addClass('show');
         //}
     });
-
-    var navigation = {
-        // Variables
-        $nav: document.querySelector('.nav'),
-        $navTrigger: document.querySelector('.nav__trigger'),
-        $navContent: document.querySelector('.nav__content'),
-        transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-        
-        init: function() {
-            var self = this;
-    
-            // Handle the transitions
-            self.$navTrigger.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (!self.$navTrigger.classList.contains('is-active')) {
-                    // .nav--trigger active
-                    self.$navTrigger.classList.add('is-active');
-                    
-                    // .nav active
-                    if (!self.$nav.classList.contains('is-active')) {
-                        self.$nav.classList.add('is-active');
-                        $('#navi').addClass('show');
-                        self.$nav.addEventListener('transitionend', function(e) {
-                            if (e.propertyName == 'transform' && self.$navTrigger.classList.contains('is-active')) {
-                                self.$navContent.classList.add('is-active');
-                            }
-                        });
-                    } else {
-                        self.$navContent.classList.add('is-active');                    
-                    }
-    
-                    // no-csstransitions fallback
-                    if (document.documentElement.classList.contains('no-csstransitions')) {
-                        self.$navContent.classList.add('is-active');
-                    }
-                } else {
-                    // .nav--trigger inactive
-                    self.$navTrigger.classList.remove('is-active');
-                    $('#navi').removeClass('show');
-                    
-                    // .nav__content inactive
-                    if (self.$navContent.classList.contains('is-active')) {
-                        self.$navContent.classList.remove('is-active');
-                        self.$navContent.addEventListener('transitionend', function(e) {
-                            if (e.propertyName == 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
-                                // .nav inactive
-                                self.$nav.classList.remove('is-active');
-                            }
-                        });
-                    } else {
-                        self.$nav.classList.remove('is-active');                    
-                    }
-    
-                    // no-csstransitions fallback
-                    if (document.documentElement.classList.contains('no-csstransitions')) {
-                        self.$nav.classList.add('is-active');
-                    }
-
-                    
-                }
-            });
-        }
-        
-    }
-    
-    navigation.init();
-    
-    var menu = $('.nav__list a')
-    menu.click(function(){
-        $('#navi').find('.nav__trigger').removeClass('is-active');
-        $('#navi').find('.nav').removeClass('is-active');
-        $('#navi').removeClass('show');
-    });
+   
 
     function counter() {
         if ($('.about .count').size()) {
@@ -351,5 +302,5 @@ var stars=800;
         $(this).find('h5,p,a').css({'opacity':'0','transition-duration':'0s','transition-delay':'0s'});
     })
 
-
+    
 });
